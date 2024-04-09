@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="position-fixed w-100 z-3 top-0" style="background-color: white;">
+            <div class="position-relative row p-0 m-0 shadow d-flex align-items-center justify-content-between">
+                <div class="col-lg-3 col-md-4 logo-ctn py-2 px-3 col-6">
+                    <a href="index.html">
+                        <img src="images/logo.svg" alt="" class="w-100">
+                    </a>
+                </div>
+
+                <div class="d-block d-xl-none d-lg-none menu col-3">
+                    <button class="w-100 text-danger text-uppercase fw-semibold border-none position-relative " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"">
+                    <span><img src="images/bars-solid.svg" alt="" class="position-absolute" style="height: 20px; width: 30px; left: 0; transform: translate(-50%); top: 2px;"></span>  
+                    menu
+                    </button>
+                </div>
+
+                <div class="offcanvas offcanvas-end w-100 d-lg-none " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="background-color: #98002E;">
+                    <div class="offcanvas-header justify-content-end mt-2">
+                        <button type="button" class="btn-close float-end text-white bg-white p-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+                            <div class="w-100 mb-3">
+                                <form action="" class="h-100 w-100 d-flex">
+                                    <input placeholder="search by keyword" type="text" class="nav-form p-2" style="width: 80%; background-color: #ffffff4d;">
+                                    <input type="submit" placeholder="" class="submit-btn" value="" style="width: 20%;">
+                                </form>
+                            </div>
+                            
+                            <div class="accordion-item my-2">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button text-uppercase text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style="background-color: #98002E;">
+                                academics and admission
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse " style="background-color: #98002E;">
+                                <div class="accordion-body ps-3 m-0 p-0">
+                                    <ul class="p-0 m-0">
+                                        <li>
+                                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                <div class="accordion-item border-none">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed text-capitalize text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"  style="background-color: #98002E;">
+                                                    academics
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body"  style="background-color: #98002E;">
+                                                        <ul>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">majors and programs list</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">undergraduate programs</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">graduate programs</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">adult learning and degree completion</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">transfer students</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="accordion-item border-none">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed text-capitalize text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"  style="background-color: #98002E;">
+                                                    tuition & aid
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body"  style="background-color: #98002E;">
+                                                        <ul>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">tuition</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">financial aid</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">scholarships</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="accordion-item border-none">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed text-capitalize text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"  style="background-color: #98002E;">
+                                                    admissions
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body"  style="background-color: #98002E;">
+                                                        <ul>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">visit</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">meet an admissions counselor</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="accordion-item border-none">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed text-capitalize text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour"  style="background-color: #98002E;">
+                                                    support & career
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body"  style="background-color: #98002E;">
+                                                        <ul>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">center for academic Excellence</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">internships</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item my-2">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button text-uppercase text-white  shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo" style="background-color: #98002E;">
+                                campus life
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse " style="background-color: #98002E;">
+                                <div class="accordion-body ps-3 m-0 p-0">
+                                    <ul class="p-0 m-0">
+                                        <li>
+                                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                    <button class="w-100 border-0 text-start text-capitalize shadow-none text-white p-3 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen"  style="background-color: #98002E;">
+                                                        visit us
+                                                    </button>
+                                                    </h2>
+                                                </div>
+                                                <div class="accordion-item border-0">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed text-capitalize text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive"  style="background-color: #98002E;">
+                                                    about alverno
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body"  style="background-color: #98002E;">
+                                                        <ul>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">about</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">a hispanic-serving institution</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">first generation college student</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">diversity, equity and inclusion</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">alverno's president</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="accordion-item border-0">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed text-capitalize text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix"  style="background-color: #98002E;">
+                                                    campus
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body"  style="background-color: #98002E;">
+                                                        <ul>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">events</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">campus life</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">residence life</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="accordion-item border-0">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed text-capitalize text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven"  style="background-color: #98002E;">
+                                                    store
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body"  style="background-color: #98002E;">
+                                                        <ul>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">a-store (alverno gear)</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item my-2">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button text-uppercase text-white  shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree" style="background-color: #98002E;">
+                                student resources
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse " style="background-color: #98002E;">
+                                <div class="accordion-body ps-3 m-0 p-0">
+                                    <ul class="p-0 m-0">
+                                        <li>
+                                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                <div class="accordion-item border-none">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed text-capitalize text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight"  style="background-color: #98002E;">
+                                                    academic
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body"  style="background-color: #98002E;">
+                                                        <ul>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">academic advising</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">career studio</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">instructional services</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">library</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">student development and success</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">study abroad</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="accordion-item border-none">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed text-capitalize text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine"  style="background-color: #98002E;">
+                                                    technology
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body"  style="background-color: #98002E;">
+                                                        <ul>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">media hub</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">tech services</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="accordion-item border-none">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed text-capitalize text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen"  style="background-color: #98002E;">
+                                                    registration
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body"  style="background-color: #98002E;">
+                                                        <ul>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">register for classes</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">office of the Registrar</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="accordion-item border-none">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed text-capitalize text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven"  style="background-color: #98002E;">
+                                                    accounts
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseEleven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body"  style="background-color: #98002E;">
+                                                        <ul>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">student accounts</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">financial aid</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="accordion-item border-none">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed text-capitalize text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve"  style="background-color: #98002E;">
+                                                    health & safety
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseTwelve" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body"  style="background-color: #98002E;">
+                                                        <ul>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">wellness</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">campus safety</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="accordion-item border-none">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed text-capitalize text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThirteen" aria-expanded="false" aria-controls="flush-collapseThirteen"  style="background-color: #98002E;">
+                                                    additional resources
+                                                    </button>
+                                                </h2>
+                                                <div id="flush-collapseThirteen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body"  style="background-color: #98002E;">
+                                                        <ul>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">resources for parents</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">all student resources</a></li>
+                                                            <li class="my-2"><a href="" class="text-white text-capitalize">internal event brand guide</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item my-2">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button text-uppercase text-white  shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour" style="background-color: #98002E;">
+                                8 abilities
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse " style="background-color: #98002E;">
+                                <div class="accordion-body ps-3 m-0 p-0">
+                                    <ul class="p-0 m-0">
+                                        <li>
+                                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                <div class="accordion-item border-none">
+                                                <h2 class="accordion-header">
+                                                    <button class="w-100 border-0 text-start text-capitalize text-white p-3 fs-5 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen"  style="background-color: #98002E;">
+                                                    8 abilities
+                                                    </button>
+                                                </h2>
+                                                </div>
+                                                <div class="accordion-item border-none">
+                                                <h2 class="accordion-header">
+                                                    <button class="w-100 border-0 text-start text-capitalize shadow-none text-white p-3 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen"  style="background-color: #98002E;">
+                                                        instructional and assesment services
+                                                    </button>
+                                                </h2>
+                                                </div>
+                                                <div class="accordion-item border-none">
+                                                <h2 class="accordion-header">
+                                                    <button class="w-100 border-0 text-start text-capitalize shadow-none text-white p-3 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen"  style="background-color: #98002E;">
+                                                        volunteer assessor program
+                                                    </button>
+                                                </h2>
+                                                </div>
+                                                <div class="accordion-item border-none">
+                                                <h2 class="accordion-header">
+                                                    <button class="w-100 border-0 text-start text-capitalize shadow-none text-white p-3 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen"  style="background-color: #98002E;">
+                                                        assesment workshop & consulting
+                                                    </button>
+                                                </h2>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item my-2">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button text-uppercase text-white  shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive" style="background-color: #98002E;">
+                                igniters
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse " style="background-color: #98002E;">
+                                <div class="accordion-body ps-3 m-0 p-0">
+                                    <ul class="p-0 m-0">
+                                        <li>
+                                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                <div class="accordion-item border-none">
+                                                <h2 class="accordion-header">
+                                                    <button class="w-100 border-0 text-start text-capitalize shadow-none text-white p-3 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen"  style="background-color: #98002E;">
+                                                    give
+                                                    </button>
+                                                </h2>
+                                                </div>
+                                                <div class="accordion-item border-none">
+                                                <h2 class="accordion-header">
+                                                    <button class="w-100 border-0 text-start text-capitalize shadow-none text-white p-3 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen"  style="background-color: #98002E;">
+                                                        donor roll
+                                                    </button>
+                                                </h2>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item my-2">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button text-uppercase text-white  shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="true" aria-controls="panelsStayOpen-collapseSix" style="background-color: #98002E;">
+                                alverno news
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse " style="background-color: #98002E;">
+                                <div class="accordion-body ps-3 m-0 p-0">
+                                    <ul class="p-0 m-0">
+                                        <li>
+                                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                                <div class="accordion-item border-none">
+                                                <h2 class="accordion-header">
+                                                    <button class="w-100 border-0 text-start text-capitalize shadow-none text-white p-3 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen"  style="background-color: #98002E;">
+                                                    faculty experts
+                                                    </button>
+                                                </h2>
+                                                </div>
+                                                <div class="accordion-item border-none">
+                                                <h2 class="accordion-header">
+                                                    <button class="w-100 border-0 text-start text-capitalize shadow-none text-white p-3 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen"  style="background-color: #98002E;">
+                                                        news/blog
+                                                    </button>
+                                                </h2>
+                                                </div>
+                                                <div class="accordion-item border-none">
+                                                <h2 class="accordion-header">
+                                                    <button class="w-100 border-0 text-start text-capitalize shadow-none text-white p-3 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseFourteen"  style="background-color: #98002E;">
+                                                        a magazine
+                                                    </button>
+                                                </h2>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="text-white text-start text-uppercase my-3 ps-4 fs-4 ">
+                                athletics
+                            </div>
+                            <div class="text-white text-start text-uppercase my-3 ps-4 fs-4 ">
+                                visit
+                            </div>
+                            <div class="text-white text-start text-uppercase my-3 ps-4 fs-4 ">
+                                events
+                            </div>
+                            <div class="text-white text-start text-uppercase my-3 ps-4 fs-4 ">
+                                alumnae
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-ctn col-lg-9 col-md-10 p-0 d-none d-lg-block">
+                    <nav class="nav-links-top row m-0">
+                        <ul class="links-ctn-top m-0 col-9 p-0">
+                            <div class="h-100 position-relative">
+                                <button class="py-2 px-5 top-button text-wrap lh-1" onclick="toggleTopDropDown()">alverno news <span><img src="images/chevron-down-white.png" class="mx-1"></span></button>
+                                <ul class="top-drop-down m-0 px-4 pb-3 d-none position-absolute">
+                                    <li><a href="" class="lh-1 text-wrap">faculty experts</a></li>
+                                    <li><a href="" class="lh-1 text-wrap">news/blogs</a></li>
+                                    <li><a href="" class="lh-1 text-wrap">alverno magazine</a></li>
+                                </ul>
+                            </div>
+                            
+                            <li class="px-3"><a href="" class="lh-1">athletics</a></li>
+                            <li class="px-3"><a href="" class="lh-1">visit</a></li>
+                            <li class="px-3"><a href="" class="lh-1">events</a></li>
+                            <li class="px-3"><a href="" class="lh-1">alumni</a></li>
+                            <li class="px-3"><a href="" class="lh-1">give</a></li>
+                        </ul>
+                        <div class="col-3 h-100">
+                            <form action="" class="h-100 d-flex">
+                                <input placeholder="search by keyword" type="text" class="nav-form p-2">
+                                <input type="submit" placeholder="" class="submit-btn" value="">
+                            </form>
+                        </div>
+                    </nav>
+                    <nav class="nav-links-bottom row m-0 ">
+                        <ul class="links-ctn-bottom h-100 col-12 m-0 p-0">
+                            <div class="dropdown" style="height: 45px;">
+                                <button class=" dropdown-toggle h-100 mx-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="lh-1 text-wrap">academics & admissions</span>
+                                </button>
+                                <div class="dropdown-menu menu-large">
+                                    <div class="dropdown-details py-5 px-5 row h-100">
+                                        <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
+                                            <li class="text-wrap">
+                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">academics</a>
+                                                <ul class="p-0">
+                                                    <li class="my-2 "><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Majors and Programs List</a></li>
+                                                    <li class="my-2 "><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Undergraduate Programs</a></li>
+                                                    <li class="my-2 "><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Graduate Programs</a></li>
+                                                    <li class="my-2 "><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Adult Learning & Degree Completion</a></li>
+                                                    <li class="my-2 "><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Transfer Students</a></li>
+                                                    <li class="my-2 "><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">International Students</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
+                                            <li class="text-wrap">
+                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">tuition & aid</a>
+                                                <ul class="p-0">
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Tuition</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Financial aid</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Scholarships</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Admissions</a>
+                                                <ul class="p-0">
+                                                    <li class="my-2 text-break"><a class="dropdown-item p-0 p-0 text-danger  text-wrap fs-5 fw-semibold" href="#">Visit</a></li>
+                                                    <li class="my-2 text-break"><a class="dropdown-item p-0 p-0 text-danger  text-wrap fs-5 fw-semibold" href="#">Meet an Admissions counselor</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
+                                            <li class="text-wrap">
+                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Support & Career</a>
+                                                <ul class="p-0">
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Center For Academic Exellence</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Internships</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="text-wrap">
+                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Admissions</a>
+                                                <ul class="p-0">
+                                                    <li class="my-2"><a class="dropdown-item p-0 p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Visit</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Meet an Admissions counselor</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
+                                            <li class="text-wrap">
+                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Registraton</a>
+                                                <ul class="p-0">
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Office of the Registrar</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Register for classes</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Catalogs & Policies</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown" style="height: 45px;">
+                                <button class=" dropdown-toggle h-100 mx-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="lh-1 text-wrap">campus life</span>
+                                </button>
+                                <div class="dropdown-menu menu-large">
+                                    <div class="dropdown-details py-5 px-5 row">
+                                        <ul class="col-3 p-0 mx-4 px-3" style="width: 350px;">
+                                            <li class="text-wrap">
+                                                <img src="images/menu_CampusLife.png" alt="" class="">
+                                                <ul class="p-0">
+                                                    <li class="my-2 text-wrap"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Visit us</a></li>
+                                                </ul>
+                                                <p class="text-secondary fw-semibold">The best way to know if Alverno is right for you is to come visit</p>
+                                            </li>
+                                        </ul>
+                                        <ul class="col-3 p-0 mx-4 px-3" style="width: 250px;">
+                                            <li class="text-wrap">
+                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">About Alverno</a>
+                                                <ul class="p-0">
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">About</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">A Hispanic-Serving Institution </a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">First-Generation College Students</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Diversity, Equity & Inclusion</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Alverno's President</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Chat with an Alverno Student</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="col-3 p-0 mx-4 px-3" style="width: 250px;">
+                                            <li class="text-wrap">
+                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Campus</a>
+                                                <ul class="p-0">
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Events</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Campus Life</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Residence Life</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Dining Services</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Student Engagement</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Greenhouse</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Campus Ministry</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Campus Safety</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="col-3 p-0 mx-4 px-3" style="width: 250px;">
+                                            <li class="text-wrap">
+                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">store</a>
+                                                <ul class="p-0">
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">A-Store(Alverno Gear)</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown" style="height: 45px;">
+                                <button class=" dropdown-toggle h-100 mx-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="lh-1 text-wrap">student resources</span>
+                                </button>
+                                <div class="dropdown-menu menu-large">
+                                    <div class="dropdown-details py-5 px-5 row h-100">
+                                        <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
+                                            <li class="text-wrap">
+                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">academic</a>
+                                                <ul class="p-0">
+                                                    <li class="my-2 text-wrap"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Academic Advising</a></li>
+                                                    <li class="my-2 text-wrap"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Career Studio</a></li>
+                                                    <li class="my-2 text-wrap"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Instructional Services</a></li>
+                                                    <li class="my-2 text-wrap"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Library</a></li>
+                                                    <li class="my-2 text-wrap"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Student Development and Success</a></li>
+                                                    <li class="my-2 text-wrap"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Study Abroad</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
+                                            <li class="text-wrap">
+                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">technology</a>
+                                                <ul class="p-0">
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Media Hub</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Tech Services</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Registration</a>
+                                                <ul class="p-0">
+                                                    <li class="my-2 text-wrap text-break"><a class="dropdown-item p-0 p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Office of the Registrar</a></li>
+                                                    <li class="my-2 text-wrap text-break"><a class="dropdown-item p-0 p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Register for Classes</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
+                                            <li class="text-wrap">
+                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Accounts</a>
+                                                <ul class="p-0">
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Student Accounts</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Financial Aid</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="text-wrap">
+                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Health and Safety</a>
+                                                <ul class="p-0">
+                                                    <li class="my-2"><a class="dropdown-item p-0 p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Wellness</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Campus Safety</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
+                                            <li class="text-wrap">
+                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">additional resources</a>
+                                                <ul class="p-0">
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Resources for Parents</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">All Student Resources</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Internal Event Brand Guide</a></li>
+                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Covid-19</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-center" style="height: 45px;">
+                                <button class=" dropdown-toggle h-100 mx-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="lh-1 text-wrap">8 abilities</span>
+                                </button>
+                                <ul class="mx-4 px-3 dropdown-menu menu-small py-3">
+                                    <li class="text-wrap">
+                                        <ul class="p-2">
+                                            <li class="my-2"><a class="dropdown-item p-0 text-danger text-center text-wrap fs-5 fw-semibold" href="#">8 Abilities</a></li>
+                                            <li class="my-2"><a class="dropdown-item p-0 text-danger text-center text-wrap fs-5 fw-semibold" href="#">Instructional and Assessment Services</a></li>
+                                            <li class="my-2"><a class="dropdown-item p-0 text-danger text-center text-wrap fs-5 fw-semibold" href="#">Volunteer Assessor Program</a></li>
+                                            <li class="my-2"><a class="dropdown-item p-0 text-danger text-center text-wrap fs-5 fw-semibold" href="#">Assessment Workshops and Consulting</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="dropdown-center" style="height: 45px;">
+                                <button class=" dropdown-toggle h-100 mx-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="lh-1 text-wrap">igniters</span>
+                                </button>
+                                <ul class="mx-4 px-3 dropdown-menu menu-small py-3">
+                                    <li class="text-wrap">
+                                        <ul class="p-2">
+                                            <li class="my-2"><a class="dropdown-item p-0 text-danger text-center text-wrap fs-5 fw-semibold" href="#">Give</a></li>
+                                            <li class="my-2"><a class="dropdown-item p-0 text-danger text-center text-wrap fs-5 fw-semibold" href="#">Donor Roll</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <li class="drop-btn">
+                                <a href="apply.html">
+                                    <button class="btn apply p-3 mx-2 rounded-pill fw-semibold btn-warning">apply now</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="main-area animate__fadeIn">
+            <div>
+                <h1 class="mb-3 text-center" style="font-size: 10vw;">get ready</h1>
+                <p class="text-center" style="font-size: 5vw;">to ignite your potential</p>
+            </div>
+            <div class=" mt-3 w-100 row d-flex justify-content-center align-items-center p-0">
+                <div class="row gap-3 justify-content-center p-0">
+                    <button class="btn btn-danger col-lg-3 col-md-7 col-9 my-2 rounded-pill px-sm-2 px-lg-4 py-3"><a href="#" class="text-white fs-5 lh-1 ">find your program</a></button>
+                    <button class="btn btn-danger col-lg-3 col-md-7 col-9 my-2 rounded-pill px-sm-2 px-lg-4 py-3"><a href="#" class="text-white fs-5 lh-1 ">tuition and fees</a></button>
+                    <button class="btn btn-danger col-lg-3 col-md-7 col-9 my-2 rounded-pill px-sm-2 px-lg-4 py-3"><a href="#" class="text-white fs-5 lh-1 ">the alverno experience</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="alverno-empowers row m-0">
+            <div class="col-md-6 col-sm-12">
+                <h1 class="mb-5 fw-bold text-center text-warning text-uppercase fs-md-1 bottom-line-center position-relative">alverno empowers me to be me</h1>
+                <p class="text-white text-center fs-4">
+                    At Alverno College, you’ll get personalized support from start to finish.
+                    You’ll cultivate the skills you need for success. 
+                    And you’ll develop the confidence that will get you ready to thrive as a person
+                    and a professional. Here, you’ll find a welcoming,
+                    diverse community inspired by our Catholic Franciscan heritage
+                    that values you for who you are and who you want to become.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="explore-programs">
+            <h1 class="text-danger text-uppercase fs-1 fw-bold mt-5 position-relative bottom-line-center">explore our programs</h1>
+            <div class="row d-flex flex-wrap align-items-start justify-content-center card-ctn mx-5 mt-5">
+                <div class="col-lg-3 col-md-6 col-sm-12 my-4 animate__fadeInDown">
+                  <div class="card shadow position-relative">
+                    <img src="images/find-your-image.jpg" class="card-img-top card-image" alt="...">
+                    <div class="card-body px-4 py-5">
+                      <h5 class="card-title fs-3 text-danger ">Find Your Major</h5>
+                      <p class="card-text text-start fw-mediumbold">Explore our undergraduate major and minor programs for women.</p>
+                        <a href="" ><button class="btn btn-danger rounded-pill py-2 mt-3 px-4 text-uppercase text text-white fw-semibold">learn more</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 my-4 animate__fadeInDown">
+                  <div class="card shadow position-relative">
+                    <img src="images/transfer-to-alverno.jpg" class="card-img-top card-image" alt="...">
+                    <div class="card-body px-4 py-5">
+                      <h5 class="card-title fs-3 text-danger ">Transfer to Alverno</h5>
+                      <p class="card-text text-start fw-mediumbold">Continue your undergraduate education journey with Alverno.</p>
+                        <a href="" ><button class="btn btn-danger rounded-pill py-2 mt-3 px-4 text-uppercase text text-white fw-semibold">learn more</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 my-4 animate__fadeInDown">
+                  <div class="card shadow position-relative">
+                    <img src="images/grauate-programs.jpg" class="card-img-top card-image" alt="...">
+                    <div class="card-body  px-4 py-5">
+                        <h5 class="card-title fs-3 text-danger ">Graduate Programs</h5>
+                        <p class="card-text text-start fw-mediumbold">Advance your profession with graduate programs for all genders.</p>
+                        <a href="" ><button class="card-btn btn btn-danger rounded-pill py-2 mt-3 px-4 text-uppercase text text-white fw-semibold">learn more</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 my-4 animate__fadeInDown">
+                  <div class="card shadow position-relative">
+                    <img src="images/adult-education.jpg" class="card-img-top card-image" alt="...">
+                    <div class="card-body px-4 py-5">
+                      <h5 class="card-title fs-3 text-danger ">Adult Learning</h5>
+                      <p class="card-text text-start fw-mediumbold">Explore degree-completion, licensure and certificate programs.</p>
+                        <a href="" ><button class="btn btn-danger rounded-pill py-2 mt-3 px-4 text-uppercase text text-white fw-semibold">learn more</button></a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="space my-3">
+        <div class="dots-ctn">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+
+    <section>
+        <div class="row mt-5 d-flex justify-content-between m-0 pb-5 px-2">
+            <div class="col-lg-5 col-md-12 px-0 px-md-5 alverno-difference">
+                <h1 class="text-danger text-uppercase fw-bold mb-5 position-relative display-4">the alverno difference</h1>
+                <p class="text-secondary fw-mediumbold fs-4 lh-2">
+                    We provide students with much more than just a single letter grade.
+                    Our feedback identifies strengths and targets areas for growth.
+                    Our learning approach is centered around the 8 Abilities – what set our students
+                    and alums apart. These are the skills that will help you thrive both
+                    personally and professionally.
+                </p>
+                <button class="btn btn-danger text-uppercase text-white rounded-pill py-3 px-4 fw-semibold my-3">Our Abilities in action</button>
+            </div>
+            <div class="col-lg-6 col-md-12 p-0">
+                <img src="images/the-alverno-difference.jpg" alt="" class="h-100 w-100">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="testimonial mt-5 py-5">
+            <div class="row m-0 p-2 p-lg-5 d-flex justify-content-center align-items-center">
+                <div class="col-lg-6 col-12 col-md-9 rounded-4 position-relative p-0">
+                    <img src="images/quote-open-yellow.svg" alt="" class="quote-open position-absolute">
+                    <img src="images/testimonial-image.png" alt="" class="w-100 rounded-4" style="height: 400px;">
+                </div>
+                <div class="col-lg-6 col-12 col-md-9 position-relative p-0">
+                    <div class="testimony rounded-4 p-3 p-md-5 p-lg-5 pb-3 position-relative">
+                        <p class="text-black fw-mediumbold fs-2 lh-5">
+                            At Alverno, I’ve been able to develop my communication skills
+                            and learned how to work well independently and on a team.
+                            With the support of my professors, I’ve been able to gain valuable
+                            career experience on and off campus. Ultimately, I’m becoming a stronger
+                            leader.
+                        </p>
+                        <p class="text-uppercase text-end mt-5 m-0 fw-semibold fs-3 text-danger lh-5">
+                            - Isabelle
+                        </p>
+                        <img src="images/quote-close-pink.svg" alt="" class="quote-close position-absolute">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="where-all-belong row m-0 py-5">
+            <div class="col-12 col-lg-9 p-3">
+                <h1 class="my-5 position-relative text-uppercase text-danger fw-semibold display-5 text-center position-relative bottom-line-center">where all belong</h1>
+                <p class="text-center fw-mediumbold text-black fs-4 mb-5">
+                    We believe education is enriched by the unique perspectives and experiences
+                    each student brings, and we are committed to fostering an environment that
+                    celebrates and values diversity in all its forms. It is central to our
+                    mission to embrace and encourage diversity, equity and inclusion (DE&I).
+                </p>
+            </div>
+            <div class="btn-ctn mb-5 row gap-3 justify-content-center ">
+                <button class="btn text-uppercase text-danger col-12 col-md-9 col-lg-3 my-2 fs-5 border-danger rounded-pill py-2 px-2 ">de&i initiatives</button>
+                <button class="btn text-uppercase text-danger col-12 col-md-9 col-lg-3 my-2 fs-5 border-danger rounded-pill py-2 px-2 ">Hispanic-Serving Institution</button>
+                <button class="btn text-uppercase text-danger col-12 col-md-9 col-lg-3 my-2 fs-5 border-danger rounded-pill py-2 px-2 ">first gen</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="alverno-strong">
+            <h1 class="my-5 position-relative text-uppercase text-danger fw-semibold display-5 text-center position-relative bottom-line-center">alverno strong</h1>
+            <div class="row count-ctn m-0 d-flex justify-content-center px-5 my-4">
+                <div class="count col-9 col-md-6 col-lg-3">
+                    <h2 class="my-5 position-relative text-uppercase text-danger fw-semibold display-1 text-center" style="text-shadow: 6px 6px #EDB111;"> <span data-val="95" class="num">95</span>%</h1>
+                    <p class="text-black text-center fs-4">of alums surveyed feel prepared for career expectations</p>
+                </div>
+                <div class="count col-9 col-md-6 col-lg-3">
+                    <h2 class="my-5 position-relative text-uppercase text-danger fw-semibold display-1 text-center" style="text-shadow: 6px 6px #EDB111;"> <span data-val="100" class="num">100</span>%</h1>
+                    <p class="text-black text-center fs-4">NCLEX first-time pass rate for May '23 BSN graduates in WI</p>
+                </div>
+                <div class="count col-9 col-md-6 col-lg-3">
+                    <h2 class="my-5 position-relative text-uppercase text-danger fw-semibold display-1 text-center" style="text-shadow: 6px 6px #EDB111;"> <span data-val="100" class="num">100</span>%</h1>
+                    <p class="text-black text-center fs-4">internship and clinical placement rate</p>
+                </div>
+                <div class="count col-9 col-md-6 col-lg-3">
+                    <h2 class="my-5 position-relative text-uppercase text-danger fw-semibold display-1 text-center" style="text-shadow: 6px 6px #EDB111;"> <span data-val="93" class="num">93</span>%</h1>
+                    <p class="text-black text-center fs-4">of undergraduates receive financial aid</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="space my-3">
+        <div class="dots-ctn">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+
+    <section>
+        <div class="alverno-today row d-flex justify-content-center align-items-center m-0 flex-column pt-3">
+            <h1 class="my-5 position-relative text-uppercase text-danger fw-semibold display-5 text-center position-relative bottom-line-center">alverno today</h1>
+            <div class="upcoming-events col-lg-10 col-md-10 col-sm-11 shadow rounded-4 mt-5 px-4 text-center">
+                <h2 class="my-5 text-uppercase text-danger fw-bold text-start">Upcoming Events</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col">
+                      <div class="card h-100 rounded-3 position-relative">
+                        <div class="rounded-bottom-4 bg-danger p-2 position-absolute top-0 text-white text-center fs-4" style="height: 100px; width: 120px; left: 30px;">
+                            <span class="fs-1">22</span> 
+                            <p>mar 2024</p>
+                        </div>
+                        <img src="images/admitted-student.jpg" class="card-img-top w-100 rounded-top-3" alt="..." style="height: 200px;">
+                        <div class="card-body">
+                          <h3 class="card-title text-capitalize text-center mb-3">admitted student day</h3>
+                          <p class="card-text text-start">
+                            Accepted students get a taste of attending class, meet with financial aid and tour campus.</p>
+                        </div>
+                        <div class="card-footer bg-danger rounded-bottom-3 py-2 mt-3">
+                          <p class="text-white text-uppercase m-0 fs-4">learn more</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100 rounded-3 position-relative">
+                        <div class="rounded-bottom-4 bg-danger p-2 position-absolute top-0 right-25 text-white text-center fs-4" style="height: 100px; width: 120px; left: 30px;">
+                            <span class="fs-1">22</span> 
+                            <p>mar 2024</p>
+                        </div>
+                        <img src="images/masters-of-music.jpg" class="card-img-top w-100 rounded-top-3" alt="..." style="height: 200px;">
+                        <div class="card-body">
+                          <h3 class="card-title text-capitalize text-center mb-3">masters of social work in session</h3>
+                          <p class="card-text text-start">
+                            5:30 p.m. – Join us for a discussion about our Master of Science in Social Work program!</div>
+                        <div class="card-footer bg-danger rounded-bottom-3 py-2 mt-3">
+                          <p class="text-white text-uppercase m-0 fs-4">learn more</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100 rounded-3 position-relative">
+                        <div class="rounded-bottom-4 bg-danger p-2 position-absolute top-0 right-25 text-white text-center fs-4" style="height: 100px; width: 120px; left: 30px;">
+                            <span class="fs-1">22</span> 
+                            <p>mar 2024</p>
+                        </div>
+                        <img src="images/masters-of-music.jpg" class="card-img-top w-100 rounded-top-3" alt="..." style="height: 200px;">
+                        <div class="card-body">
+                          <h3 class="card-title text-capitalize text-center mb-3">masters of social work in session</h3>
+                          <p class="card-text text-start">
+                            5:30 p.m. – Join us for a discussion about our Master of Science in Social Work program!</div>
+                        <div class="card-footer bg-danger rounded-bottom-3 py-2 mt-3">
+                          <p class="text-white text-uppercase m-0 fs-4">learn more</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col d-lg-none">
+                      <div class="card h-100 rounded-3 position-relative">
+                        <div class="rounded-bottom-4 bg-danger p-2 position-absolute top-0 right-25 text-white text-center fs-4" style="height: 100px; width: 120px; left: 30px;">
+                            <span class="fs-1">22</span> 
+                            <p>mar 2024</p>
+                        </div>
+                        <img src="images/masters-of-music.jpg" class="card-img-top w-100 rounded-top-3" alt="..." style="height: 200px;">
+                        <div class="card-body">
+                          <h3 class="card-title text-capitalize text-center mb-3">masters of social work in session</h3>
+                          <p class="card-text text-start">
+                            5:30 p.m. – Join us for a discussion about our Master of Science in Social Work program!</div>
+                        <div class="card-footer bg-danger rounded-bottom-3 py-2 mt-3">
+                          <p class="text-white text-uppercase m-0 fs-4">learn more</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <a href=""> <button style="width: 200px;" class="btn my-5 text-uppercase text-danger border-danger rounded-pill px-4 py-3">see all events</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="row d-flex align-items-center justify-content-center mt-5 card-ctn mx-auto alverno-power">
+            <h1 class="text-danger text-uppercase fw-bold mb-5 position-relative fs-2">alverno news</h1>
+            <div class="col-lg-4 col-md-6 col-sm-12 my-4 animate__fadeInDown" style="height: 500px;">
+              <div class="card shadow position-relative h-100">
+                <img src="images/art-transforms.png" class="card-img-top card-image h-50" alt="...">
+                <div class="card-body px-4 py-5">
+                  <h5 class="card-title fs-3 text-danger ">Art Therapy Helps Transform Pain Into Power</h5>
+                    <a href="" ><button class="btn btn-danger rounded-pill py-3 mt-3 px-5 text-uppercase text text-white fw-semibold">Read more</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 my-4 animate__fadeInDown" style="height: 500px;">
+              <div class="card shadow position-relative h-100">
+                <img src="images/women's-history.jpeg" class="card-img-top card-image h-50" alt="...">
+                <div class="card-body  px-4 py-5">
+                    <h5 class="card-title fs-3 text-danger ">Highlighting Women's History Month & empowering the next generation</h5>
+                    <a href="" ><button class="card-btn btn btn-danger rounded-pill py-3 mt-3 px-5 text-uppercase text text-white fw-semibold">Read more</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 my-4 animate__fadeInDown" style="height: 500px;">
+              <div class="card shadow position-relative h-100">
+                <img src="images/college-team.jpg" class="card-img-top card-image h-50" alt="...">
+                <div class="card-body px-4 py-5">
+                  <h5 class="card-title fs-3 text-danger ">Alverno College Team Chosen for 2024 National USDA Competition</h5>
+                    <a href="" ><button class="btn btn-danger rounded-pill py-3 mt-3 px-5 text-uppercase text text-white fw-semibold">Read more</button></a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="space my-3">
+        <div class="dots-ctn">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </div>
+
+    <footer>
+        <section>
+            <div class="whats-next">
+                <h1 class="my-5 position-relative text-uppercase text-danger fw-bold display-3 text-center lh-1">ready for what's next</h1>
+                <div class=" row mx-auto gap-3 justify-content-center my-5">
+                    <button class="btn btn-danger col-9 col-md-7 col-lg-3 px-5 py-3 rounded-pill text-uppercase fw-semibold text-white text-center">Request More Info</button>
+                    <a href="apply.html" class="text-uppercase fw-semibold text-danger text-center">
+                        <button class="btn btn-warning px-5 py-3 col-9 col-md-7 col-lg-3 rounded-pill text-uppercase fw-semibold text-danger text-center">apply now</button>
+                    </a> 
+                    <button class="btn btn-danger col-9 col-md-7 col-lg-3 px-5 py-3 rounded-pill text-uppercase fw-semibold text-white text-center">explore programs</button>
+                </div>
+                <div class="col">
+                    <img src="images/subfooter.jpg" alt="" class="h-100 w-100">
+                </div>
+            </div>
+        </section>
+        <div class=" footer-ctn" style="height: auto; width: 100%;">
+            <div class="row m-0 justify-content-center align-items-start p-3 text-center" >
+                <div class="col-sm-8 col-10 col-md-3 col-lg-3 d-flex flex-column justify-content-start" style="height: 270px;">
+                    <div class="footer-logo-ctn bg-white rounded-bottom-4 px-4 py-3">
+                        <a href="index.html">
+                            <img src="images/logo_footer.svg" alt="" class="footer-logo">
+                        </a>
+                    </div>
+                    <div class="social-media-icon-ctn d-flex align-items-center justify-content-around">
+                        <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-x-twitter fa-2xl" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-linkedin-in fa-2xl" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="col-7 col-md-3 col-lg-3 d-flex justify-content-center align-items-center">
+                    <ul class="p-0 w-100">
+                        <li class="text-white fw-medium my-4 text-break text-center">3400 S. 43rd St.Milwaukee, WI 53234</li>
+                        <li class="text-white fw-medium my-4 text-center"><a href="" class="text-white text-center">admissions@alverno.edu</a></li>
+                        <li class="text-white fw-medium my-4 text-center"><a href="" class="text-white text-center">Campus Map</a></li>
+                        <li class="text-white fw-medium my-4 text-center"><a href="" class="text-white text-center">Contact us</a> </li>
+                    </ul>
+                </div>
+                <div class="col-7 col-md-3 col-lg-3 d-flex justify-content-center align-items-center">
+                    <ul class="p-0 w-100">
+                        <li class="text-white fw-medium my-4 text-break text-center"><a href="" class="text-white text-center">Employment at Alverno</a></li>
+                        <li class="text-white fw-medium my-4 text-center"><a href="" class="text-white text-center">Event Spaces</a></li>
+                        <li class="text-white fw-medium my-4 text-center"><a href="" class="text-white text-center">Trustees</a></li>
+                        <li class="text-white fw-medium my-4 text-center"><a href="" class="text-white text-center">Early Learning Center</a> </li>
+                        <li class="text-white fw-medium my-4 text-center"><a href="" class="text-white text-center">Privacy Policy</a> </li>
+                    </ul>
+                </div>
+                <div class="col-7 col-md-3 col-lg-3 d-flex justify-content-center align-items-center">
+                    <ul class="p-0 w-100">
+                        <li class="text-white fw-medium my-4 text-break text-center"><a href="" class="text-white text-center">Faculty & Staff</a></li>
+                        <li class="text-white fw-medium my-4 text-center text-break"><a href="" class="text-white text-center">Accreditation</a></li>
+                        <li class="text-white fw-medium my-4 text-center text-break"><a href="" class="text-white text-center">Learning Outcomes</a></li>
+                        <li class="text-white fw-medium my-4 text-center text-break"><a href="" class="text-white text-center">Harassment/Discrimination Policy</a> </li>
+                        <li class="text-white fw-medium my-4 text-center text-break"><a href="" class="text-white text-center">Web Accessibility Statement</a> </li>
+                        <li class="text-white fw-medium my-4 text-center text-break"><a href="" class="text-white text-center">Institutional Review Board</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/e091db22dc.js" crossorigin="anonymous"></script>
+</body>
+</html>

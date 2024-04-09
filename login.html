@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>login</title>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <div class="row m-0 d-flex justify-content-between align-items-center" style="height: 50px;">
+                <div class="col-6 col-lg-3 d-flex justify-content-center align-items-center">
+                    <a href="index.html"><img src="images/logo.svg" alt="" style="height: 50px;" class=""></a>
+                </div>
+
+                <div class="dropdown d-block d-xl-none d-lg-none menu col-6">
+                    <button class="btn dropdown-toggle w-100 text-danger text-uppercase fw-semibold border-none position-relative "  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        menu
+                    </button>
+                    <ul class="dropdown-menu rounded-bottom-3 rounded-0" style="background-color: #740426;">
+                      <li><a class="dropdown-item text-white" href="login.html">login</a></li>
+                      <li><a class="dropdown-item text-white" href="signup.html">create account</a></li>
+                      <li><a class="dropdown-item text-white" href="#">apply online</a></li>
+                      <li><a class="dropdown-item text-white" href="#">events</a></li>
+                    </ul>
+                  </div>
+
+                <div class="col-9 d-none d-lg-block h-100" style="background-color: #740426;">
+                    <ul class=" d-flex justify-content-start align-items-center p-0 m-0 h-100">
+                        <a href="login.html" class="scl"> <li class="text-uppercase text-white mx-3 semi-circle position-relative">login</li></a>
+                        <a href="signup.html" class="scl"> <li class="text-uppercase text-white mx-3 semi-circle position-relative">create account</li></a>
+                        <a href="" class="scl"> <li class="text-uppercase text-white mx-3 semi-circle position-relative">apply online</li></a>
+                        <a href="" class="scl"> <li class="text-uppercase text-white mx-3 semi-circle position-relative">events</li></a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="row m-0 d-flex justify-content-center align-items-center" style="margin-top: 100px; height: 100vh; background-color: #EDB111;">
+            <div class="col-11 col-lg-6 col-md-10 bg-white px-5 py-3 rounded-2 mt-5 mb-5">
+                <form>
+                    <h1 class="text-capitalize text-danger text-center mt-4">alverno college</h1>
+                    <p class="text-center">
+                        <a href="signup.html"  target="_blank" class="text-center text-capitalize mx-auto">click here to create account</a>
+                    </p>
+                    <div class="mb-5">
+                      <label for="exampleInputEmail1" class="form-label">Email</label>
+                      <input type="email" class="form-control shadow-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control shadow-none" id="exampleInputPassword1">
+                    </div>
+
+                    <div class="mb-3">
+                        <p class="text-end">
+                            <a href="" class="text-danger text-capitalize mb-3">forgot your password?</a>
+                        </p>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label text-capitalize shadow-none for="exampleCheck1">remember me</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                        <label class="form-check-label text-capitalize shadow-none for="exampleCheck2">are you signed in from a public computer</label>
+                    </div>
+                    <button type="submit" class="btn btn-danger rounded-pill py-3 w-100 text-capitalize mb-3">log in</button>
+                    <p class="mb-3 text-center">
+                        Alverno College | 3400 S. 43rd Street, Milwaukee, WI 53219 | 414-382-6100 | 800-933-3401
+                    </p>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/e091db22dc.js" crossorigin="anonymous"></script>
+</body>
+</html>

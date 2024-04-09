@@ -1,0 +1,523 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+    font-family: "Poppins", sans-serif;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.logo-ctn{
+    height: 100%;
+    max-width: 250px;
+}
+
+.nav-ctn{
+    height: 130px;
+}
+
+.nav-links-top{
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #98002E;
+    border-bottom-left-radius: 12px;
+
+}
+
+.links-ctn-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.links-ctn-top button{
+    outline: none;
+    border: none;
+    background-color: #740426;
+    height: 100%;
+    border-bottom-left-radius: 12px;
+}
+
+.nav-links-top li a,.links-ctn-top button{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-form{
+    background-color: #740426;
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 150px;
+    color: white;
+}
+.submit-btn{
+    background-image: url(/images/search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    margin: 5px;
+    width: 30px;
+    outline: none;
+    border: none;
+}
+
+input::placeholder{
+    color: #ececec;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.menu{
+    width: 100px;
+}
+
+.menu button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.nav-links-bottom{
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom-left-radius: 12px;
+}
+
+.links-ctn-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dropdown button, .dropdown-center button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 125px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.apply{
+    width: 150px;
+    height: 80%;
+    color: #740426;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+
+/* navbar dropdowns */
+.top-drop-down{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    z-index: 100;
+    background-color: #740426;
+    height: 150px;
+    width: 250px;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.red-line{
+    border-bottom: 0px;
+    transition: all ease 0.2s;
+}
+
+.red-line:hover{
+    border-bottom: #740426 5px solid;
+}
+
+.drop-btn::after{
+    height: 0px;
+}
+
+.dropdown:hover > .drop-btn::after{
+    opacity: 1;
+    background-color: #740426;
+    display: block;
+    transition: all ease 0.2s;
+    height: 5px;
+    content: " ";
+}
+
+.menu-large{
+    height: auto;
+    width: 100vw;
+    background-color: white;
+    top: 13px !important;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: none;
+    border-color: white;
+}
+
+.menu-small{
+    height: auto;
+    width: 300px;
+    top: 13px !important;
+    background-color: white;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: none;
+    border-color: white;
+}
+.dropdown-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: relative;
+}
+.dropdown-details ul:not(:last-child){
+    border-right: solid 2px #c2c2c2;
+
+}
+/* main area */
+.main-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 100%;
+    background-image: url(/images/landing-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 80px;
+}
+.main-area-info{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-area h1{
+    font-size: 120px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: #2b2b2b;
+}
+
+.main-area p{
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.main-area div button{
+    background-color: #98002E;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* alverno empowers */
+.alverno-empowers{
+    height: 500px;
+    background-color: #740426;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/content_area_pattern_triangle.svg);
+    background-size: cover;
+    background-position: center;
+}
+/* explore our programs */
+.explore-programs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+.card-ctn{
+    width: 90%;
+    position: relative;
+}
+
+
+.card{
+    bottom: 0px;
+}
+
+.card:hover{
+    cursor: pointer;
+    transition: all ease .3s;
+    bottom: 5px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.card-body button:hover{
+    background-color: white;
+    color: #740426 !important;
+    border: 1px solid #740426;
+}
+
+.card-image{
+    height: 220px;
+    border-bottom: 5px solid #740426;
+
+
+}
+
+.space{
+    height: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.dots-ctn{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 20px;
+}
+.dot{
+    height:5px;
+    width:5px;
+    border-radius: 50%;
+    background-color: #EDB111;
+}
+
+.alverno-difference h1::before{
+    height: 3px;
+    width: 140px;
+    background-color: #EDB111;
+    content: " ";
+    position: absolute;
+    bottom: -25px;
+}
+
+.testimonial{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #98002E;
+}
+.testimony{
+    background-color: white;
+    height: auto;
+    top: 50px;
+    right: 50px;
+}
+.quote-close{
+    height: 100px;
+    width: 100px;
+    bottom: -70px;
+    right: -20px;
+}
+.quote-open{
+    height: 100px;
+    width: 100px;
+    top: -70px;
+    left: -20px;
+}
+
+.where-all-belong{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.where-all-belong button:hover{
+    background-color: #740426;
+    color: white !important;
+    border: none;
+    word-wrap: break-word;
+}
+
+.where-all-belong .btn-ctn{
+
+}
+
+.event-images{
+    height: 220px;
+}
+
+.alverno-power .card-image{
+    border-bottom: solid 5px #EDB111;
+}
+
+.footer-ctn{
+    height: auto;
+    width: 100%;
+    background-color: #98002E;
+    box-shadow: none;
+    position: relative;
+}
+.footer-ctn::before{
+    height: 12px;
+    background-color: #98002E;
+    width: 100%;
+    content: " ";
+    position: absolute;
+    top: -12px;
+    width: 100%;
+    opacity: .5;
+    display: block;
+}
+.footer-logo-ctn{
+    position: relative;
+    bottom: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo{
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.social-media-icon-ctn{
+    display: flex;
+    height: 50px;
+}
+
+.social-media-icon-ctn i{
+    cursor: pointer;
+}
+
+.social-media-icon-ctn i:hover{
+    color: #EDB111 !important;
+    transition: all linear .3s;
+}
+
+/* apply page */
+
+.apply-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    height: 700px;
+    width: 100%;
+    background-image: url(/images/apply.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), to(rgba(0, 0, 0, 0.75))), url('/images/apply.jpg');
+    background-image: linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.75)), url('/images/apply.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-top: 60px;
+}
+/* responsive apply banner height */
+@media only screen and (max-width: 450px) {
+    .main-area{
+        height: 400px;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .testimony{
+        background-color: white;
+        height: auto;
+        top: 0;
+        right: 0;
+    }
+    .space{
+        height: 100px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0px !important;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .testimony{
+        background-color: white;
+        height: auto;
+        top: -20px;
+        right: 0;
+        border-radius: 0px 0px 12px 12px!important;
+    }
+    .apply-banner{
+        height: 400px;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+}
+
+.bottom-line-center::after{
+    height: 3px;
+    width: 140px;
+    background-color: #EDB111;
+    content: " ";
+    position: absolute;
+    right: 50%;
+    bottom: -20px;
+    transform: translateX(50%);
+}
+
+.scl:hover > .semi-circle::after{
+    display: block !important;
+}
+
+.semi-circle::after{
+    display: none;
+    height: 25px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #EDB111;
+    position: absolute;
+    content: " ";
+    bottom: -25px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+ 

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Create Account</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="row m-0 d-flex justify-content-between align-items-center" style="height: 50px;">
+                <div class="col-6 col-lg-3 d-flex justify-content-center align-items-center">
+                    <a href="index.html"><img src="images/logo.svg" alt="" style="height: 50px;" class=""></a>
+                </div>
+
+                <div class="dropdown d-block d-xl-none d-lg-none menu col-6">
+                    <button class="btn dropdown-toggle w-100 text-danger text-uppercase fw-semibold border-none position-relative "  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        menu
+                    </button>
+                    <ul class="dropdown-menu rounded-bottom-3 rounded-0" style="background-color: #740426;">
+                      <li><a class="dropdown-item text-white" href="login.html">login</a></li>
+                      <li><a class="dropdown-item text-white" href="signup.html">create account</a></li>
+                      <li><a class="dropdown-item text-white" href="#">apply online</a></li>
+                      <li><a class="dropdown-item text-white" href="#">events</a></li>
+                    </ul>
+                  </div>
+
+                <div class="col-9 d-none d-lg-block h-100" style="background-color: #740426;">
+                    <ul class=" d-flex justify-content-start align-items-center p-0 m-0 h-100">
+                        <a href="login.html" class="scl"> <li class="text-uppercase text-white mx-3 semi-circle position-relative">login</li></a>
+                        <a href="signup.html" class="scl"> <li class="text-uppercase text-white mx-3 semi-circle position-relative">create account</li></a>
+                        <a href="" class="scl"> <li class="text-uppercase text-white mx-3 semi-circle position-relative">apply online</li></a>
+                        <a href="" class="scl"> <li class="text-uppercase text-white mx-3 semi-circle position-relative">events</li></a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="row m-0 d-flex justify-content-center align-items-center" style="margin-top: 100px; height: fit-content; background-color: #EDB111;">
+            <h1 class="text-capitalize text-start text-white mt-5">create account</h1>
+            <div class="col-11 col-lg-10 col-md-10 bg-white px-2 px-md-5 py-3 rounded-2 mt-5 mb-5">
+                <form class="row g-3">
+                    <h3 class="text-capitalize text-black text-start mt-5">contact information</h3>
+                   
+                    <div class="col-md-5">
+                      <label for="inputFirstName" class="form-label">First Name <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control shadow-none" id="inputFirstName" required>
+                    </div>
+
+                    <div class="col-md-5">
+                      <label for="inputLastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+                      <input type="text" class="form-control shadow-none" id="inputLastName" required>
+                    </div>
+
+                    <div class="col-md-5">
+                      <label for="inputEmail1" class="form-label">Email Address <span class="text-danger">*</span></label>
+                      <input type="email" class="form-control shadow-none" id="inputEmail1" required>
+                    </div>
+
+                    <div class="col-md-5">
+                      <label for="inputEmail2" class="form-label">Confirm Email Address <span class="text-danger">*</span></label>
+                      <input type="email" class="form-control shadow-none" id="inputEmail2" required>
+                    </div>
+
+                    <div class="col-md-5">
+                        <label for="inputEmail2" class="form-label">Prefered mode of contact<span class="text-danger">*</span></label>
+                        <select class="form-select form-select mb-3 shadow-none" aria-label="Large select example">
+                            <option selected></option>
+                            <option value="Text Message">Text Message</option>
+                            <option value="Contact Preference">Contact Preference</option>
+                            <option value="Mobile">Mobile</option>
+                            <option value="Any">Any</option>
+                            <option value="Email">Email</option>
+                            <option value="Phone">Phone</option>
+                            <option value="Fax">Fax</option>
+                            <option value="Mail">Mail</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-5">
+                      <label for="inputCellPhone" class="form-label">Cellphone<span class="text-danger">*</span></label>
+                      <input type="tel" class="form-control shadow-none" id="inputCellPhone" required>
+                    </div>
+
+                    <div class="col-md-5">
+                        <p class="text-start text-secondary text-capitalize border-bottom">
+                            I agree to allow Alverno College to text me at this mobile number.
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input shadow-none" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Do not allow
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input shadow-none" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Allow
+                            </label>
+                          </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <label for="inputWorkPhone" class="form-label">Workphone<span class="text-danger">*</span></label>
+                        <input type="tel" class="form-control shadow-none" id="inputWorkPhone" required>
+                    </div>
+
+                    <div class="col-md-5">
+                        <label for="inputBirthDate" class="form-label">Birth Date<span class="text-danger">*</span></label>
+                        <input type="date" class="form-control shadow-none" id="inputBirthDate" required>
+                    </div>
+
+                    <div class="col-md-5">
+                        <label for="inputGender" class="form-label">Gender<span class="text-danger">*</span></label>
+                        <select class="form-select form-select mb-3 shadow-none" aria-label="Large select example">
+                            <option selected></option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-5">
+                        <label for="inputEmail2" class="form-label">Language spoken at home<span class="text-danger">*</span></label>
+                        <select class="form-select form-select mb-3 shadow-none" aria-label="Large select example">
+                            <option selected></option>
+                            <option value="English">English</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="Yoruba">Yoruba</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-5">
+                        <p class="text-start text-secondary text-capitalize border-bottom">
+                            check if the address is outside the U.S. or canada
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input shadow-none" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                              yes
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input shadow-none" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
+                            <label class="form-check-label" for="flexRadioDefault4">
+                                no
+                            </label>
+                          </div>
+                    </div>
+
+                    <div class="col-12">
+                      <label for="inputAddress" class="form-label">Address</label>
+                      <input type="text" class="form-control shadow-none" id="inputAddress">
+                    </div>
+                    <div class="col-md-5">
+                      <label for="inputCity" class="form-label">City<span class="text-danger">*</span></label>
+                      <input type="text" class="form-control shadow-none" id="inputCity">
+                    </div>
+                    <div class="col-md-5">
+                      <label for="inputState" class="form-label">State<span class="text-danger">*</span></label>
+                      <select id="inputState" class="form-select shadow-none">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="inputZip" class="form-label">Zip/Postal Code<span class="text-danger">*</span></label>
+                      <input type="text" class="form-control shadow-none" id="inputZip">
+                    </div>
+                    <h4>Academic Plans</h4>
+                    <div class="col-md-8">
+                        <label for="inputZip" class="form-label">What's your highest level of education completed<span class="text-danger">*</span></label>
+                        <select class="form-select form-select mb-3 shadow-none" aria-label="Large select example">
+                            <option selected></option>
+                            <option value="Secondary-school">Secondary school</option>
+                            <option value="primary-school">primary school</option>
+                            <option value="University">University</option>
+                        </select>
+                    </div>
+                    <div class="col-md-8">
+                        <h5 class="text-black text-start"><strong>Degree Type:</strong></h5>
+                        <p class="text-secondary text-start"> 
+                            <strong class="text-black">Bachelor Degree:</strong>
+                            Currently in high school, transferring from another college or university, or adults with some or no college experience wanting to start or complete a bachelor’s degree program (typically 4 years).
+                        </p>
+                        <p class="text-secondary text-start">
+                            <strong class="text-black">Graduate:</strong>
+                            Currently have a bachelor’s and/or master’s degree from an accredited college or university.
+                        </p>
+                        <p class="text-secondary text-start">
+                            <strong class="text-black">Non-Degree Health Care Prerequisite:</strong>
+                            Currently have a bachelor’s and/or master’s degree from an accredited college or university. Preparing for an MSN/graduate-level program.
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <select class="form-select form-select mb-3 shadow-none" aria-label="Large select example">
+                            <option selected></option>
+                            <option value="Bachelor's">Bachelors</option>
+                            <option value="Graduate">Graduate</option>
+                        </select>
+                    </div>
+                    <div class="col-md-8">
+                        <label for="inputStudyPlan" class="form-label">I plan to begin my studies in<span class="text-danger">*</span></label>
+                        <select class="form-select form-select mb-3 shadow-none" aria-label="Large select example">
+                            <option selected></option>
+                            <option value="Fall">Fall 2024</option>
+                            <option value="Spring">Spring 2024</option>
+                            <option value="Summer">Summer 2024</option>
+                        </select>
+                    </div>
+                    <h4>Account Information</h4>
+                    <div class="col-md-5">
+                        <label for="exampleInputPassword1" class="form-label">Password <span class="text-danger">*</span></label>
+                        <input type="password" class="form-control shadow-none" id="exampleInputPassword1" required>
+                    </div>
+                    <div class="col-md-5">
+                        <label for="exampleInputPassword2" class="form-label">Confirm Password <span class="text-danger">*</span></label>
+                        <input type="password" class="form-control shadow-none" id="exampleInputPassword2" required>
+                    </div>
+                    <div class="col-md-3">
+                      <button type="submit" class="btn btn-danger px-4 py-3 rounded-pill w-100 my-5 shadow-none">Create Account</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/e091db22dc.js" crossorigin="anonymous"></script>
+</body>
+</html>
