@@ -9,44 +9,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
-    <header>
-        <nav class="position-fixed w-100 z-3 top-0" style="background-color: white;">
-            <div class="position-relative row p-0 m-0 shadow d-flex align-items-center justify-content-between">
-                <div class="col-lg-3 col-md-4 logo-ctn py-2 px-3 col-6">
-                    <a href="index.html">
-                        <img src="images/logo.svg" alt="" class="w-100">
-                    </a>
-                </div>
-
-                <div class="d-block d-xl-none d-lg-none menu col-3">
-                    <button class="w-100 text-danger text-uppercase fw-semibold border-none position-relative " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"">
+    <!-- navbar -->
+    <nav class="position-fixed w-100 z-3 top-0" style="background-color: white;">
+        <div class="position-relative row p-0 m-0 shadow d-flex align-items-center justify-content-between">
+            <!-- logo container for the navbar -->
+            <div class="col-lg-3 col-md-4 logo-ctn py-2 px-3 col-6">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="" class="w-100">
+                </a>
+            </div>
+            <!-- menu button to display the sidebar, only visible on small and medium screens  -->
+            <div class="d-block d-xl-none d-lg-none menu col-3">
+                <button class="w-100 text-danger text-uppercase fw-semibold border-none position-relative " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"">
                     <span><img src="images/bars-solid.svg" alt="" class="position-absolute" style="height: 20px; width: 30px; left: 0; transform: translate(-50%); top: 2px;"></span>  
                     menu
-                    </button>
+                </button>
+            </div>
+            <!-- markup for the sidebar only visible on small and medium screens-->
+            <div class="offcanvas offcanvas-end w-100 d-lg-none " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="background-color: #98002E;">
+                <!-- button to turn off the display for the side navbar -->
+                <div class="offcanvas-header justify-content-end mt-2">
+                    <button type="button" class="btn-close float-end text-white bg-white p-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-
-                <div class="offcanvas offcanvas-end w-100 d-lg-none " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="background-color: #98002E;">
-                    <div class="offcanvas-header justify-content-end mt-2">
-                        <button type="button" class="btn-close float-end text-white bg-white p-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
-                            <div class="w-100 mb-3">
-                                <form action="" class="h-100 w-100 d-flex">
-                                    <input placeholder="search by keyword" type="text" class="nav-form p-2" style="width: 80%; background-color: #ffffff4d;">
-                                    <input type="submit" placeholder="" class="submit-btn" value="" style="width: 20%;">
-                                </form>
-                            </div>
-                            
-                            <div class="accordion-item my-2">
-                            <h2 class="accordion-header">
+                <div class="offcanvas-body">
+                    <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+                        <!-- input form on the sidebar -->
+                        <div class="w-100 mb-3">
+                            <form action="" class="h-100 w-100 d-flex">
+                                <input placeholder="search by keyword" type="text" class="nav-form p-2" style="width: 80%; background-color: #ffffff4d;">
+                                <input type="submit" placeholder="" class="submit-btn" value="" style="width: 20%;">
+                            </form>
+                        </div>
+                        <!-- sidebar dropdown container -->
+                        <div class="accordion-item my-2">
+                            <div class="accordion-header">
+                                <!-- button to toggle collapse the sidebar dropdown -->
                                 <button class="accordion-button text-uppercase text-white shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style="background-color: #98002E;">
                                 academics and admission
                                 </button>
-                            </h2>
+                            </div>
+                            <!-- sidebar dropdown -->
                             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse " style="background-color: #98002E;">
                                 <div class="accordion-body ps-3 m-0 p-0">
                                     <ul class="p-0 m-0">
@@ -121,13 +126,16 @@
                                     </ul>
                                 </div>
                             </div>
-                            </div>
-                            <div class="accordion-item my-2">
-                            <h2 class="accordion-header">
+                        </div>
+                        <!-- sidebar dropdown container -->
+                        <div class="accordion-item my-2">
+                            <div class="accordion-header">
+                                <!-- button to toggle collapse the sidebar dropdown -->
                                 <button class="accordion-button text-uppercase text-white  shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo" style="background-color: #98002E;">
                                 campus life
                                 </button>
-                            </h2>
+                            </div>
+                            <!-- sidebar dropdown container -->
                             <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse " style="background-color: #98002E;">
                                 <div class="accordion-body ps-3 m-0 p-0">
                                     <ul class="p-0 m-0">
@@ -193,13 +201,13 @@
                                     </ul>
                                 </div>
                             </div>
-                            </div>
-                            <div class="accordion-item my-2">
-                            <h2 class="accordion-header">
+                        </div>
+                        <div class="accordion-item my-2">
+                            <div class="accordion-header">
                                 <button class="accordion-button text-uppercase text-white  shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree" style="background-color: #98002E;">
                                 student resources
                                 </button>
-                            </h2>
+                            </div>
                             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse " style="background-color: #98002E;">
                                 <div class="accordion-body ps-3 m-0 p-0">
                                     <ul class="p-0 m-0">
@@ -305,13 +313,13 @@
                                     </ul>
                                 </div>
                             </div>
-                            </div>
-                            <div class="accordion-item my-2">
-                            <h2 class="accordion-header">
+                        </div>
+                        <div class="accordion-item my-2">
+                            <div class="accordion-header">
                                 <button class="accordion-button text-uppercase text-white  shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour" style="background-color: #98002E;">
                                 8 abilities
                                 </button>
-                            </h2>
+                            </div>
                             <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse " style="background-color: #98002E;">
                                 <div class="accordion-body ps-3 m-0 p-0">
                                     <ul class="p-0 m-0">
@@ -350,13 +358,13 @@
                                     </ul>
                                 </div>
                             </div>
-                            </div>
-                            <div class="accordion-item my-2">
-                            <h2 class="accordion-header">
+                        </div>
+                        <div class="accordion-item my-2">
+                            <div class="accordion-header">
                                 <button class="accordion-button text-uppercase text-white  shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="true" aria-controls="panelsStayOpen-collapseFive" style="background-color: #98002E;">
                                 igniters
                                 </button>
-                            </h2>
+                            </div>
                             <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse " style="background-color: #98002E;">
                                 <div class="accordion-body ps-3 m-0 p-0">
                                     <ul class="p-0 m-0">
@@ -381,13 +389,13 @@
                                     </ul>
                                 </div>
                             </div>
-                            </div>
-                            <div class="accordion-item my-2">
-                            <h2 class="accordion-header">
+                        </div>
+                        <div class="accordion-item my-2">
+                            <div class="accordion-header">
                                 <button class="accordion-button text-uppercase text-white  shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="true" aria-controls="panelsStayOpen-collapseSix" style="background-color: #98002E;">
                                 alverno news
                                 </button>
-                            </h2>
+                            </div>
                             <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse " style="background-color: #98002E;">
                                 <div class="accordion-body ps-3 m-0 p-0">
                                     <ul class="p-0 m-0">
@@ -419,295 +427,359 @@
                                     </ul>
                                 </div>
                             </div>
+                        </div>
+                        <div class="text-white text-start text-uppercase my-3 ps-4 fs-4 ">
+                            athletics
+                        </div>
+                        <div class="text-white text-start text-uppercase my-3 ps-4 fs-4 ">
+                            visit
+                        </div>
+                        <div class="text-white text-start text-uppercase my-3 ps-4 fs-4 ">
+                            events
+                        </div>
+                        <div class="text-white text-start text-uppercase my-3 ps-4 fs-4 ">
+                            alumnae
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- markup for the normal navbar, visible only on large screens -->
+            <div class="nav-ctn col-lg-9 col-md-10 p-0 d-none d-lg-block">
+                <!-- markup for the section of the navbar with red background -->
+                <nav class="nav-links-top row m-0">
+                    <!-- markup for the links displayed on the navbar with red background -->
+                    <ul class="links-ctn-top m-0 col-9 p-0">
+                        <!-- markup for the alverno news dropdown on the top row of the navbar -->
+                        <div class="h-100 position-relative">
+                            <!-- button to toggle the alverno news dropdown -->
+                            <button class="py-2 px-5 top-button text-wrap lh-1" onclick="toggleTopDropDown()">alverno news <span><img src="images/chevron-down-white.png" class="mx-1"></span></button>
+                            <!-- alverno news dropdown -->
+                            <ul class="top-drop-down m-0 px-4 pb-3 d-none position-absolute">
+                                <li><a href="" class="lh-1 text-wrap">faculty experts</a></li>
+                                <li><a href="" class="lh-1 text-wrap">news/blogs</a></li>
+                                <li><a href="" class="lh-1 text-wrap">alverno magazine</a></li>
+                            </ul>
+                        </div>
+                        <!-- remaining links on the top row of the navbar -->
+                        <li class="px-3"><a href="" class="lh-1">athletics</a></li>
+                        <li class="px-3"><a href="" class="lh-1">visit</a></li>
+                        <li class="px-3"><a href="" class="lh-1">events</a></li>
+                        <li class="px-3"><a href="" class="lh-1">alumni</a></li>
+                        <li class="px-3"><a href="" class="lh-1">give</a></li>
+                    </ul>
+                    <!-- container for the input form on the top row on the navbar -->
+                    <div class="col-3 h-100">
+                        <form action="" class="h-100 d-flex">
+                            <input placeholder="search by keyword" type="text" class="nav-form p-2">
+                            <input type="submit" placeholder="" class="submit-btn" value="">
+                        </form>
+                    </div>
+                </nav>
+                <!-- markup for the bottom section of the navbar with large dropdowns and white background -->
+                <nav class="nav-links-bottom row m-0 ">
+                    <!-- container for the links and dropdowns on the bottom section of the navbar -->
+                    <ul class="links-ctn-bottom h-100 col-12 m-0 p-0">
+                        <div class="dropdown" style="height: 45px;">
+                            <!-- button to toggle the dropdown for the academics -->
+                            <button class=" dropdown-toggle h-100 mx-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="lh-1 text-wrap">academics & admissions</span>
+                            </button>
+                            <!-- dropdown on the academics and admission portion of the navbar -->
+                            <div class="dropdown-menu menu-large">
+                                <div class="dropdown-details py-5 px-5 row h-100">
+                                    <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
+                                        <li class="text-wrap">
+                                            <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">academics</a>
+                                            <ul class="p-0">
+                                                <li class="my-2 "><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Majors and Programs List</a></li>
+                                                <li class="my-2 "><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Undergraduate Programs</a></li>
+                                                <li class="my-2 "><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Graduate Programs</a></li>
+                                                <li class="my-2 "><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Adult Learning & Degree Completion</a></li>
+                                                <li class="my-2 "><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Transfer Students</a></li>
+                                                <li class="my-2 "><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">International Students</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
+                                        <li class="text-wrap">
+                                            <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">tuition & aid</a>
+                                            <ul class="p-0">
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Tuition</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Financial aid</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Scholarships</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Admissions</a>
+                                            <ul class="p-0">
+                                                <li class="my-2 text-break"><a class="dropdown-item p-0 p-0 text-danger  text-wrap fs-5 fw-semibold" href="#">Visit</a></li>
+                                                <li class="my-2 text-break"><a class="dropdown-item p-0 p-0 text-danger  text-wrap fs-5 fw-semibold" href="#">Meet an Admissions counselor</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
+                                        <li class="text-wrap">
+                                            <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Support & Career</a>
+                                            <ul class="p-0">
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Center For Academic Exellence</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Internships</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="text-wrap">
+                                            <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Admissions</a>
+                                            <ul class="p-0">
+                                                <li class="my-2"><a class="dropdown-item p-0 p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Visit</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Meet an Admissions counselor</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
+                                        <li class="text-wrap">
+                                            <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Registraton</a>
+                                            <ul class="p-0">
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Office of the Registrar</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Register for classes</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Catalogs & Policies</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="text-white text-start text-uppercase my-3 ps-4 fs-4 ">
-                                athletics
+                        </div>
+                        <div class="dropdown" style="height: 45px;">
+                            <!-- button to toggle the dropdown for the campus life info -->
+                            <button class=" dropdown-toggle h-100 mx-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="lh-1 text-wrap">campus life</span>
+                            </button>
+                            <!-- dropdown on the academics and campus life portion of the navbar -->
+                            <div class="dropdown-menu menu-large">
+                                <div class="dropdown-details py-5 row">
+                                    <ul class="col-3 p-0 mx-4 px-3" style="width: 350px;">
+                                        <li class="text-wrap">
+                                            <img src="images/menu_CampusLife.png" alt="" class="">
+                                            <ul class="p-0">
+                                                <li class="my-2 text-wrap"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Visit us</a></li>
+                                            </ul>
+                                            <p class="text-secondary fw-semibold">The best way to know if Alverno is right for you is to come visit</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="col-3 p-0 mx-4 px-3" style="width: 250px;">
+                                        <li class="text-wrap">
+                                            <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">About Alverno</a>
+                                            <ul class="p-0">
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">About</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">A Hispanic-Serving Institution </a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">First-Generation College Students</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Diversity, Equity & Inclusion</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Alverno's President</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Chat with an Alverno Student</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="col-3 p-0 mx-4 px-3" style="width: 250px;">
+                                        <li class="text-wrap">
+                                            <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Campus</a>
+                                            <ul class="p-0">
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Events</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Campus Life</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Residence Life</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Dining Services</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Student Engagement</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Greenhouse</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Campus Ministry</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Campus Safety</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="col-3 p-0 mx-4 px-3" style="width: 250px;">
+                                        <li class="text-wrap">
+                                            <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">store</a>
+                                            <ul class="p-0">
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">A-Store(Alverno Gear)</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="text-white text-start text-uppercase my-3 ps-4 fs-4 ">
-                                visit
+                        </div>
+                        <div class="dropdown" style="height: 45px;">
+                            <!-- button to toggle down the dropdown for the student student resources -->
+                            <button class=" dropdown-toggle h-100 mx-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="lh-1 text-wrap">student resources</span>
+                            </button>
+                            <!-- dropdown for the student resources portion of the navbar -->
+                            <div class="dropdown-menu menu-large">
+                                <div class="dropdown-details py-5 px-5 row h-100">
+                                    <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
+                                        <li class="text-wrap">
+                                            <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">academic</a>
+                                            <ul class="p-0">
+                                                <li class="my-2 text-wrap"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Academic Advising</a></li>
+                                                <li class="my-2 text-wrap"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Career Studio</a></li>
+                                                <li class="my-2 text-wrap"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Instructional Services</a></li>
+                                                <li class="my-2 text-wrap"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Library</a></li>
+                                                <li class="my-2 text-wrap"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Student Development and Success</a></li>
+                                                <li class="my-2 text-wrap"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Study Abroad</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
+                                        <li class="text-wrap">
+                                            <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">technology</a>
+                                            <ul class="p-0">
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Media Hub</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Tech Services</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Registration</a>
+                                            <ul class="p-0">
+                                                <li class="my-2 text-wrap text-break"><a class="dropdown-item p-0 p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Office of the Registrar</a></li>
+                                                <li class="my-2 text-wrap text-break"><a class="dropdown-item p-0 p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Register for Classes</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
+                                        <li class="text-wrap">
+                                            <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Accounts</a>
+                                            <ul class="p-0">
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Student Accounts</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Financial Aid</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="text-wrap">
+                                            <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Health and Safety</a>
+                                            <ul class="p-0">
+                                                <li class="my-2"><a class="dropdown-item p-0 p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Wellness</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Campus Safety</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
+                                        <li class="text-wrap">
+                                            <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">additional resources</a>
+                                            <ul class="p-0">
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Resources for Parents</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">All Student Resources</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Internal Event Brand Guide</a></li>
+                                                <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Covid-19</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="text-white text-start text-uppercase my-3 ps-4 fs-4 ">
-                                events
-                            </div>
-                            <div class="text-white text-start text-uppercase my-3 ps-4 fs-4 ">
-                                alumnae
+                        </div>
+                        <div class="dropdown-center" style="height: 45px;">
+                            <!-- button to toggle down the 8 abilities resources -->
+                            <button class=" dropdown-toggle h-100 mx-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="lh-1 text-wrap">8 abilities</span>
+                            </button>
+                            <!-- dropdown for the 8 abilities  -->
+                            <ul class="mx-4 px-3 dropdown-menu menu-small py-3">
+                                <li class="text-wrap">
+                                    <ul class="p-2">
+                                        <li class="my-2"><a class="dropdown-item p-0 text-danger text-center text-wrap fs-5 fw-semibold" href="#">8 Abilities</a></li>
+                                        <li class="my-2"><a class="dropdown-item p-0 text-danger text-center text-wrap fs-5 fw-semibold" href="#">Instructional and Assessment Services</a></li>
+                                        <li class="my-2"><a class="dropdown-item p-0 text-danger text-center text-wrap fs-5 fw-semibold" href="#">Volunteer Assessor Program</a></li>
+                                        <li class="my-2"><a class="dropdown-item p-0 text-danger text-center text-wrap fs-5 fw-semibold" href="#">Assessment Workshops and Consulting</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-center" style="height: 45px;">
+                            <!-- button to toggle the dropdown for this section -->
+                            <button class=" dropdown-toggle h-100 mx-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="lh-1 text-wrap">igniters</span>
+                            </button>
+                            <!-- dropdown container of this section -->
+                            <ul class="mx-4 px-3 dropdown-menu menu-small py-3">
+                                <li class="text-wrap">
+                                    <ul class="p-2">
+                                        <li class="my-2"><a class="dropdown-item p-0 text-danger text-center text-wrap fs-5 fw-semibold" href="#">Give</a></li>
+                                        <li class="my-2"><a class="dropdown-item p-0 text-danger text-center text-wrap fs-5 fw-semibold" href="#">Donor Roll</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- container for the apply now button on the navbar -->
+                        <li class="drop-btn">
+                            <a href="apply.html">
+                                <button class="btn apply p-3 mx-2 rounded-pill fw-semibold btn-warning">apply now</button>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </nav>
+    <!-- hero section of the landing page with carousel containing 3 slides -->
+    <section>
+        <!-- container of the carousel on the hero section of the landing page -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- first slide for the carousel -->
+                <div class="carousel-item active">
+                    <!-- the slide-1 class contains the background image -->
+                    <div class="main-area slide-1 animate__fadeIn">
+                        <div>
+                            <h1 class="mb-3 text-center" ><span>get ready </span> <br>to ignite your potential</h1>
+                        </div>
+                        <div class="d-none d-lg-flex mt-3 w-100 row d-flex justify-content-center align-items-center p-0">
+                            <div class="row gap-3 justify-content-center p-0">
+                                <button class="btn btn-danger col-lg-3 col-md-7 col-9 my-2 rounded-pill px-sm-2 px-lg-4 py-3"><a href="#" class="text-white fs-5 lh-1 ">find your program</a></button>
+                                <button class="btn btn-danger col-lg-3 col-md-7 col-9 my-2 rounded-pill px-sm-2 px-lg-4 py-3"><a href="#" class="text-white fs-5 lh-1 ">tuition and fees</a></button>
+                                <button class="btn btn-danger col-lg-3 col-md-7 col-9 my-2 rounded-pill px-sm-2 px-lg-4 py-3"><a href="#" class="text-white fs-5 lh-1 ">the alverno experience</a></button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="nav-ctn col-lg-9 col-md-10 p-0 d-none d-lg-block">
-                    <nav class="nav-links-top row m-0">
-                        <ul class="links-ctn-top m-0 col-9 p-0">
-                            <div class="h-100 position-relative">
-                                <button class="py-2 px-5 top-button text-wrap lh-1" onclick="toggleTopDropDown()">alverno news <span><img src="images/chevron-down-white.png" class="mx-1"></span></button>
-                                <ul class="top-drop-down m-0 px-4 pb-3 d-none position-absolute">
-                                    <li><a href="" class="lh-1 text-wrap">faculty experts</a></li>
-                                    <li><a href="" class="lh-1 text-wrap">news/blogs</a></li>
-                                    <li><a href="" class="lh-1 text-wrap">alverno magazine</a></li>
-                                </ul>
-                            </div>
-                            
-                            <li class="px-3"><a href="" class="lh-1">athletics</a></li>
-                            <li class="px-3"><a href="" class="lh-1">visit</a></li>
-                            <li class="px-3"><a href="" class="lh-1">events</a></li>
-                            <li class="px-3"><a href="" class="lh-1">alumni</a></li>
-                            <li class="px-3"><a href="" class="lh-1">give</a></li>
-                        </ul>
-                        <div class="col-3 h-100">
-                            <form action="" class="h-100 d-flex">
-                                <input placeholder="search by keyword" type="text" class="nav-form p-2">
-                                <input type="submit" placeholder="" class="submit-btn" value="">
-                            </form>
+                <!-- second slide on the carousel -->
+                <div class="carousel-item">
+                    <div class="main-area slide-2 animate__fadeIn">
+                        <div>
+                            <h1 class="mb-3 text-center" ><span>get ready </span> <br>to ignite your potential</h1>
                         </div>
-                    </nav>
-                    <nav class="nav-links-bottom row m-0 ">
-                        <ul class="links-ctn-bottom h-100 col-12 m-0 p-0">
-                            <div class="dropdown" style="height: 45px;">
-                                <button class=" dropdown-toggle h-100 mx-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="lh-1 text-wrap">academics & admissions</span>
-                                </button>
-                                <div class="dropdown-menu menu-large">
-                                    <div class="dropdown-details py-5 px-5 row h-100">
-                                        <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
-                                            <li class="text-wrap">
-                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">academics</a>
-                                                <ul class="p-0">
-                                                    <li class="my-2 "><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Majors and Programs List</a></li>
-                                                    <li class="my-2 "><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Undergraduate Programs</a></li>
-                                                    <li class="my-2 "><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Graduate Programs</a></li>
-                                                    <li class="my-2 "><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Adult Learning & Degree Completion</a></li>
-                                                    <li class="my-2 "><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Transfer Students</a></li>
-                                                    <li class="my-2 "><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">International Students</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
-                                            <li class="text-wrap">
-                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">tuition & aid</a>
-                                                <ul class="p-0">
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Tuition</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Financial aid</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Scholarships</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Admissions</a>
-                                                <ul class="p-0">
-                                                    <li class="my-2 text-break"><a class="dropdown-item p-0 p-0 text-danger  text-wrap fs-5 fw-semibold" href="#">Visit</a></li>
-                                                    <li class="my-2 text-break"><a class="dropdown-item p-0 p-0 text-danger  text-wrap fs-5 fw-semibold" href="#">Meet an Admissions counselor</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
-                                            <li class="text-wrap">
-                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Support & Career</a>
-                                                <ul class="p-0">
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Center For Academic Exellence</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Internships</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="text-wrap">
-                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Admissions</a>
-                                                <ul class="p-0">
-                                                    <li class="my-2"><a class="dropdown-item p-0 p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Visit</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Meet an Admissions counselor</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
-                                            <li class="text-wrap">
-                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Registraton</a>
-                                                <ul class="p-0">
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Office of the Registrar</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Register for classes</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Catalogs & Policies</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                        <div class="d-none d-lg-flex mt-3 w-100 row d-flex justify-content-center align-items-center p-0">
+                            <div class="row gap-3 justify-content-center p-0">
+                                <button class="btn btn-danger col-lg-3 col-md-7 col-9 my-2 rounded-pill px-sm-2 px-lg-4 py-3"><a href="#" class="text-white fs-5 lh-1 ">find your program</a></button>
+                                <button class="btn btn-danger col-lg-3 col-md-7 col-9 my-2 rounded-pill px-sm-2 px-lg-4 py-3"><a href="#" class="text-white fs-5 lh-1 ">tuition and fees</a></button>
+                                <button class="btn btn-danger col-lg-3 col-md-7 col-9 my-2 rounded-pill px-sm-2 px-lg-4 py-3"><a href="#" class="text-white fs-5 lh-1 ">the alverno experience</a></button>
                             </div>
-                            <div class="dropdown" style="height: 45px;">
-                                <button class=" dropdown-toggle h-100 mx-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="lh-1 text-wrap">campus life</span>
-                                </button>
-                                <div class="dropdown-menu menu-large">
-                                    <div class="dropdown-details py-5 px-5 row">
-                                        <ul class="col-3 p-0 mx-4 px-3" style="width: 350px;">
-                                            <li class="text-wrap">
-                                                <img src="images/menu_CampusLife.png" alt="" class="">
-                                                <ul class="p-0">
-                                                    <li class="my-2 text-wrap"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Visit us</a></li>
-                                                </ul>
-                                                <p class="text-secondary fw-semibold">The best way to know if Alverno is right for you is to come visit</p>
-                                            </li>
-                                        </ul>
-                                        <ul class="col-3 p-0 mx-4 px-3" style="width: 250px;">
-                                            <li class="text-wrap">
-                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">About Alverno</a>
-                                                <ul class="p-0">
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">About</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">A Hispanic-Serving Institution </a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">First-Generation College Students</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Diversity, Equity & Inclusion</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Alverno's President</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Chat with an Alverno Student</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <ul class="col-3 p-0 mx-4 px-3" style="width: 250px;">
-                                            <li class="text-wrap">
-                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Campus</a>
-                                                <ul class="p-0">
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Events</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Campus Life</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Residence Life</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Dining Services</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Student Engagement</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Greenhouse</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Campus Ministry</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Campus Safety</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <ul class="col-3 p-0 mx-4 px-3" style="width: 250px;">
-                                            <li class="text-wrap">
-                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">store</a>
-                                                <ul class="p-0">
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">A-Store(Alverno Gear)</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="dropdown" style="height: 45px;">
-                                <button class=" dropdown-toggle h-100 mx-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="lh-1 text-wrap">student resources</span>
-                                </button>
-                                <div class="dropdown-menu menu-large">
-                                    <div class="dropdown-details py-5 px-5 row h-100">
-                                        <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
-                                            <li class="text-wrap">
-                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">academic</a>
-                                                <ul class="p-0">
-                                                    <li class="my-2 text-wrap"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Academic Advising</a></li>
-                                                    <li class="my-2 text-wrap"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Career Studio</a></li>
-                                                    <li class="my-2 text-wrap"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Instructional Services</a></li>
-                                                    <li class="my-2 text-wrap"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Library</a></li>
-                                                    <li class="my-2 text-wrap"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Student Development and Success</a></li>
-                                                    <li class="my-2 text-wrap"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Study Abroad</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
-                                            <li class="text-wrap">
-                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">technology</a>
-                                                <ul class="p-0">
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Media Hub</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Tech Services</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Registration</a>
-                                                <ul class="p-0">
-                                                    <li class="my-2 text-wrap text-break"><a class="dropdown-item p-0 p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Office of the Registrar</a></li>
-                                                    <li class="my-2 text-wrap text-break"><a class="dropdown-item p-0 p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Register for Classes</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
-                                            <li class="text-wrap">
-                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Accounts</a>
-                                                <ul class="p-0">
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Student Accounts</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Financial Aid</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="text-wrap">
-                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">Health and Safety</a>
-                                                <ul class="p-0">
-                                                    <li class="my-2"><a class="dropdown-item p-0 p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Wellness</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Campus Safety</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                        <ul class="col-3 p-0 mx-4 px-3 h-100" style="width: 250px;">
-                                            <li class="text-wrap">
-                                                <a class="text-uppercase text-black fs-4 mb-5 fw-medium" href="">additional resources</a>
-                                                <ul class="p-0">
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Resources for Parents</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">All Student Resources</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Internal Event Brand Guide</a></li>
-                                                    <li class="my-2"><a class="dropdown-item p-0 text-danger text-wrap fs-5 fw-semibold" href="#">Covid-19</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="dropdown-center" style="height: 45px;">
-                                <button class=" dropdown-toggle h-100 mx-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="lh-1 text-wrap">8 abilities</span>
-                                </button>
-                                <ul class="mx-4 px-3 dropdown-menu menu-small py-3">
-                                    <li class="text-wrap">
-                                        <ul class="p-2">
-                                            <li class="my-2"><a class="dropdown-item p-0 text-danger text-center text-wrap fs-5 fw-semibold" href="#">8 Abilities</a></li>
-                                            <li class="my-2"><a class="dropdown-item p-0 text-danger text-center text-wrap fs-5 fw-semibold" href="#">Instructional and Assessment Services</a></li>
-                                            <li class="my-2"><a class="dropdown-item p-0 text-danger text-center text-wrap fs-5 fw-semibold" href="#">Volunteer Assessor Program</a></li>
-                                            <li class="my-2"><a class="dropdown-item p-0 text-danger text-center text-wrap fs-5 fw-semibold" href="#">Assessment Workshops and Consulting</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="dropdown-center" style="height: 45px;">
-                                <button class=" dropdown-toggle h-100 mx-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <span class="lh-1 text-wrap">igniters</span>
-                                </button>
-                                <ul class="mx-4 px-3 dropdown-menu menu-small py-3">
-                                    <li class="text-wrap">
-                                        <ul class="p-2">
-                                            <li class="my-2"><a class="dropdown-item p-0 text-danger text-center text-wrap fs-5 fw-semibold" href="#">Give</a></li>
-                                            <li class="my-2"><a class="dropdown-item p-0 text-danger text-center text-wrap fs-5 fw-semibold" href="#">Donor Roll</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <li class="drop-btn">
-                                <a href="apply.html">
-                                    <button class="btn apply p-3 mx-2 rounded-pill fw-semibold btn-warning">apply now</button>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-
-    <section>
-        <div class="main-area animate__fadeIn">
-            <div>
-                <h1 class="mb-3 text-center" style="font-size: 10vw;">get ready</h1>
-                <p class="text-center" style="font-size: 5vw;">to ignite your potential</p>
-            </div>
-            <div class=" mt-3 w-100 row d-flex justify-content-center align-items-center p-0">
-                <div class="row gap-3 justify-content-center p-0">
-                    <button class="btn btn-danger col-lg-3 col-md-7 col-9 my-2 rounded-pill px-sm-2 px-lg-4 py-3"><a href="#" class="text-white fs-5 lh-1 ">find your program</a></button>
-                    <button class="btn btn-danger col-lg-3 col-md-7 col-9 my-2 rounded-pill px-sm-2 px-lg-4 py-3"><a href="#" class="text-white fs-5 lh-1 ">tuition and fees</a></button>
-                    <button class="btn btn-danger col-lg-3 col-md-7 col-9 my-2 rounded-pill px-sm-2 px-lg-4 py-3"><a href="#" class="text-white fs-5 lh-1 ">the alverno experience</a></button>
+                <!-- third slide on the carousel -->
+                <div class="carousel-item">
+                    <div class="main-area slide-3 animate__fadeIn">
+                        <div>
+                            <h1 class="mb-3 text-center" ><span>get ready </span> <br>to ignite your potential</h1>
+                        </div>
+                        <div class="d-none d-lg-flex mt-3 w-100 row d-flex justify-content-center align-items-center p-0">
+                            <div class="row gap-3 justify-content-center p-0">
+                                <button class="btn btn-danger col-lg-3 col-md-7 col-9 my-2 rounded-pill px-sm-2 px-lg-4 py-3"><a href="#" class="text-white fs-5 lh-1 ">find your program</a></button>
+                                <button class="btn btn-danger col-lg-3 col-md-7 col-9 my-2 rounded-pill px-sm-2 px-lg-4 py-3"><a href="#" class="text-white fs-5 lh-1 ">tuition and fees</a></button>
+                                <button class="btn btn-danger col-lg-3 col-md-7 col-9 my-2 rounded-pill px-sm-2 px-lg-4 py-3"><a href="#" class="text-white fs-5 lh-1 ">the alverno experience</a></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- button container under the hero section carousel, only visible on small and medium screens -->
+        <div class="d-lg-none row d-flex justify-content-center align-items-center p-0 m-0 bg-white w-100" style="height: 250px;">
+            <div class="row d-flex flex-column justify-content-center align-items-center p-0 m-0 w-100">
+                <button class="btn btn-danger my-2 rounded-pill px-2 py-3" style="width: 300px;"><a href="#" class="text-white fs-5 lh-1 text-uppercase">find your program</a></button>
+                <button class="btn btn-danger my-2 rounded-pill px-2 py-3" style="width: 300px;"><a href="#" class="text-white fs-5 lh-1 text-uppercase">tuition and fees</a></button>
+                <button class="btn btn-danger my-2 rounded-pill px-2 py-3" style="width: 300px;"><a href="#" class="text-white fs-5 lh-1 text-uppercase">the alverno experience</a></button>
+            </div>
+        </div>
     </section>
-
+    <!-- alverno empowers section -->
     <section>
         <div class="alverno-empowers row m-0">
-            <div class="col-md-6 col-sm-12">
-                <h1 class="mb-5 fw-bold text-center text-warning text-uppercase fs-md-1 bottom-line-center position-relative">alverno empowers me to be me</h1>
-                <p class="text-white text-center fs-4">
+            <div class="col-md-9 col-sm-12 col-lg-6">
+                <h1 class="mb-5 fw-bold text-center text-warning text-uppercase fs-md-1 position-relative">alverno empowers me to be me</h1>
+                <p class="text-white text-center">
                     At Alverno College, you’ll get personalized support from start to finish.
                     You’ll cultivate the skills you need for success. 
                     And you’ll develop the confidence that will get you ready to thrive as a person
@@ -718,10 +790,13 @@
             </div>
         </div>
     </section>
-
+    <!-- explore our programs section -->
     <section>
         <div class="explore-programs">
+            <!-- this heading has the bottom line center class to add a yellow underline on it -->
             <h1 class="text-danger text-uppercase fs-1 fw-bold mt-5 position-relative bottom-line-center">explore our programs</h1>
+            <!-- card container in the explore our programs section -->
+            <!-- it has 4 columns on large screens, 2 columns on medium screens and 1 column on small screens -->
             <div class="row d-flex flex-wrap align-items-start justify-content-center card-ctn mx-5 mt-5">
                 <div class="col-lg-3 col-md-6 col-sm-12 my-4 animate__fadeInDown">
                   <div class="card shadow position-relative">
@@ -766,7 +841,7 @@
             </div>
         </div>
     </section>
-
+    <!-- white space with yellow dots -->
     <div class="space my-3">
         <div class="dots-ctn">
             <div class="dot"></div>
@@ -775,11 +850,9 @@
             <div class="dot"></div>
             <div class="dot"></div>
             <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
         </div>
     </div>
-
+    <!-- the alverno difference section -->
     <section>
         <div class="row mt-5 d-flex justify-content-between m-0 pb-5 px-2">
             <div class="col-lg-5 col-md-12 px-0 px-md-5 alverno-difference">
@@ -798,14 +871,17 @@
             </div>
         </div>
     </section>
-
+    <!-- testimonial section -->
     <section>
         <div class="testimonial mt-5 py-5">
             <div class="row m-0 p-2 p-lg-5 d-flex justify-content-center align-items-center">
+                <!-- container for the testimonial image -->
                 <div class="col-lg-6 col-12 col-md-9 rounded-4 position-relative p-0">
+                    <!-- image for the yellow quote on the testimonial image -->
                     <img src="images/quote-open-yellow.svg" alt="" class="quote-open position-absolute">
-                    <img src="images/testimonial-image.png" alt="" class="w-100 rounded-4" style="height: 400px;">
+                    <img src="images/testimonial-image.png" alt="" class="w-100 rounded-4 testimonial-image">
                 </div>
+                <!-- container for the testimonial text -->
                 <div class="col-lg-6 col-12 col-md-9 position-relative p-0">
                     <div class="testimony rounded-4 p-3 p-md-5 p-lg-5 pb-3 position-relative">
                         <p class="text-black fw-mediumbold fs-2 lh-5">
@@ -815,16 +891,18 @@
                             career experience on and off campus. Ultimately, I’m becoming a stronger
                             leader.
                         </p>
+                        <!-- testifier name in red color -->
                         <p class="text-uppercase text-end mt-5 m-0 fw-semibold fs-3 text-danger lh-5">
                             - Isabelle
                         </p>
+                        <!-- image for the pink quote on the testimonial text -->
                         <img src="images/quote-close-pink.svg" alt="" class="quote-close position-absolute">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    <!-- where we all belong section -->
     <section>
         <div class="where-all-belong row m-0 py-5">
             <div class="col-12 col-lg-9 p-3">
@@ -843,31 +921,35 @@
             </div>
         </div>
     </section>
-
+    <!-- alverno strong section -->
     <section>
         <div class="alverno-strong">
             <h1 class="my-5 position-relative text-uppercase text-danger fw-semibold display-5 text-center position-relative bottom-line-center">alverno strong</h1>
             <div class="row count-ctn m-0 d-flex justify-content-center px-5 my-4">
                 <div class="count col-9 col-md-6 col-lg-3">
                     <h2 class="my-5 position-relative text-uppercase text-danger fw-semibold display-1 text-center" style="text-shadow: 6px 6px #EDB111;"> <span data-val="95" class="num">95</span>%</h1>
-                    <p class="text-black text-center fs-4">of alums surveyed feel prepared for career expectations</p>
+                        <!-- counting up numbers, code for this can be found in the script.js file -->
+                        <p class="text-black text-center fs-4">of alums surveyed feel prepared for career expectations</p>
                 </div>
                 <div class="count col-9 col-md-6 col-lg-3">
                     <h2 class="my-5 position-relative text-uppercase text-danger fw-semibold display-1 text-center" style="text-shadow: 6px 6px #EDB111;"> <span data-val="100" class="num">100</span>%</h1>
+                    <!-- counting up numbers, code for this can be found in the script.js file -->
                     <p class="text-black text-center fs-4">NCLEX first-time pass rate for May '23 BSN graduates in WI</p>
                 </div>
                 <div class="count col-9 col-md-6 col-lg-3">
                     <h2 class="my-5 position-relative text-uppercase text-danger fw-semibold display-1 text-center" style="text-shadow: 6px 6px #EDB111;"> <span data-val="100" class="num">100</span>%</h1>
-                    <p class="text-black text-center fs-4">internship and clinical placement rate</p>
+                        <!-- counting up numbers, code for this can be found in the script.js file -->
+                        <p class="text-black text-center fs-4">internship and clinical placement rate</p>
                 </div>
                 <div class="count col-9 col-md-6 col-lg-3">
                     <h2 class="my-5 position-relative text-uppercase text-danger fw-semibold display-1 text-center" style="text-shadow: 6px 6px #EDB111;"> <span data-val="93" class="num">93</span>%</h1>
-                    <p class="text-black text-center fs-4">of undergraduates receive financial aid</p>
+                        <!-- counting up numbers, code for this can be found in the script.js file -->
+                        <p class="text-black text-center fs-4">of undergraduates receive financial aid</p>
                 </div>
             </div>
         </div>
     </section>
-
+    <!-- white space with yellow dots -->
     <div class="space my-3">
         <div class="dots-ctn">
             <div class="dot"></div>
@@ -876,14 +958,12 @@
             <div class="dot"></div>
             <div class="dot"></div>
             <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
         </div>
     </div>
-
+    <!-- alverno today and upcoming events section -->
     <section>
         <div class="alverno-today row d-flex justify-content-center align-items-center m-0 flex-column pt-3">
-            <h1 class="my-5 position-relative text-uppercase text-danger fw-semibold display-5 text-center position-relative bottom-line-center">alverno today</h1>
+            <h1 class="my-3 position-relative text-uppercase text-danger fw-semibold display-5 text-center position-relative bottom-line-center">alverno today</h1>
             <div class="upcoming-events col-lg-10 col-md-10 col-sm-11 shadow rounded-4 mt-5 px-4 text-center">
                 <h2 class="my-5 text-uppercase text-danger fw-bold text-start">Upcoming Events</h2>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
@@ -957,9 +1037,9 @@
             </div>
         </div>
     </section>
-
+    <!-- alverno news section -->
     <section>
-        <div class="row d-flex align-items-center justify-content-center mt-5 card-ctn mx-auto alverno-power">
+        <div class="row d-flex align-items-center justify-content-center mt-5 card-ctn mx-auto alverno-news">
             <h1 class="text-danger text-uppercase fw-bold mb-5 position-relative fs-2">alverno news</h1>
             <div class="col-lg-4 col-md-6 col-sm-12 my-4 animate__fadeInDown" style="height: 500px;">
               <div class="card shadow position-relative h-100">
@@ -990,7 +1070,7 @@
             </div>
         </div>
     </section>
-
+    <!-- white space with yellow dots -->
     <div class="space my-3">
         <div class="dots-ctn">
             <div class="dot"></div>
@@ -999,36 +1079,43 @@
             <div class="dot"></div>
             <div class="dot"></div>
             <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
         </div>
     </div>
-
+    <!-- footer section -->
     <footer>
+        <!-- ready for whats next section, just before the main footer -->
         <section>
             <div class="whats-next">
                 <h1 class="my-5 position-relative text-uppercase text-danger fw-bold display-3 text-center lh-1">ready for what's next</h1>
                 <div class=" row mx-auto gap-3 justify-content-center my-5">
-                    <button class="btn btn-danger col-9 col-md-7 col-lg-3 px-5 py-3 rounded-pill text-uppercase fw-semibold text-white text-center">Request More Info</button>
+                    <button class="btn btn-danger col-9 col-md-7 col-lg-3 px-3 py-3 rounded-pill text-uppercase fw-semibold text-white text-center">Request More Info</button>
                     <a href="apply.html" class="text-uppercase fw-semibold text-danger text-center">
-                        <button class="btn btn-warning px-5 py-3 col-9 col-md-7 col-lg-3 rounded-pill text-uppercase fw-semibold text-danger text-center">apply now</button>
+                        <button class="btn btn-warning px-3 py-3 col-9 col-md-7 col-lg-3 rounded-pill text-uppercase fw-semibold text-danger text-center">apply now</button>
                     </a> 
-                    <button class="btn btn-danger col-9 col-md-7 col-lg-3 px-5 py-3 rounded-pill text-uppercase fw-semibold text-white text-center">explore programs</button>
+                    <button class="btn btn-danger col-9 col-md-7 col-lg-3 px-3 py-3 rounded-pill text-uppercase fw-semibold text-white text-center">explore programs</button>
                 </div>
+                <!-- image container for the image in this section -->
                 <div class="col">
                     <img src="images/subfooter.jpg" alt="" class="h-100 w-100">
                 </div>
             </div>
         </section>
+        <!-- main footer -->
         <div class=" footer-ctn" style="height: auto; width: 100%;">
             <div class="row m-0 justify-content-center align-items-start p-3 text-center" >
+                <!-- first column of the footer containing the logo and social media icons -->
                 <div class="col-sm-8 col-10 col-md-3 col-lg-3 d-flex flex-column justify-content-start" style="height: 270px;">
+                    <!-- footer logo container -->
                     <div class="footer-logo-ctn bg-white rounded-bottom-4 px-4 py-3">
+                        <!-- footer logo -->
                         <a href="index.html">
                             <img src="images/logo_footer.svg" alt="" class="footer-logo">
                         </a>
                     </div>
+                    <!-- social media icon container  -->
                     <div class="social-media-icon-ctn d-flex align-items-center justify-content-around">
+                        <!-- social media icons, need to link font awesom to this page before they work -->
+                        <!-- when hovered upon their color turns yellow -->
                         <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
                         <i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffffff;"></i>
                         <i class="fa-brands fa-x-twitter fa-2xl" style="color: #ffffff;"></i>
@@ -1036,31 +1123,34 @@
                         <i class="fa-brands fa-youtube fa-2xl" style="color: #ffffff;"></i>
                     </div>
                 </div>
+                <!-- second column of the footer -->
                 <div class="col-7 col-md-3 col-lg-3 d-flex justify-content-center align-items-center">
                     <ul class="p-0 w-100">
                         <li class="text-white fw-medium my-4 text-break text-center">3400 S. 43rd St.Milwaukee, WI 53234</li>
-                        <li class="text-white fw-medium my-4 text-center"><a href="" class="text-white text-center">admissions@alverno.edu</a></li>
-                        <li class="text-white fw-medium my-4 text-center"><a href="" class="text-white text-center">Campus Map</a></li>
-                        <li class="text-white fw-medium my-4 text-center"><a href="" class="text-white text-center">Contact us</a> </li>
+                        <li class="text-white fw-medium my-4 text-center text-break"><a href="#" class="text-white text-center">admissions@alverno.edu</a></li>
+                        <li class="text-white fw-medium my-4 text-center"><a href="#" class="text-white text-center">Campus Map</a></li>
+                        <li class="text-white fw-medium my-4 text-center"><a href="#" class="text-white text-center">Contact us</a> </li>
                     </ul>
                 </div>
+                <!-- third column of the footer -->
                 <div class="col-7 col-md-3 col-lg-3 d-flex justify-content-center align-items-center">
                     <ul class="p-0 w-100">
                         <li class="text-white fw-medium my-4 text-break text-center"><a href="" class="text-white text-center">Employment at Alverno</a></li>
-                        <li class="text-white fw-medium my-4 text-center"><a href="" class="text-white text-center">Event Spaces</a></li>
-                        <li class="text-white fw-medium my-4 text-center"><a href="" class="text-white text-center">Trustees</a></li>
-                        <li class="text-white fw-medium my-4 text-center"><a href="" class="text-white text-center">Early Learning Center</a> </li>
-                        <li class="text-white fw-medium my-4 text-center"><a href="" class="text-white text-center">Privacy Policy</a> </li>
+                        <li class="text-white fw-medium my-4 text-center"><a href="#" class="text-white text-center">Event Spaces</a></li>
+                        <li class="text-white fw-medium my-4 text-center"><a href="#" class="text-white text-center">Trustees</a></li>
+                        <li class="text-white fw-medium my-4 text-center"><a href="#" class="text-white text-center">Early Learning Center</a> </li>
+                        <li class="text-white fw-medium my-4 text-center"><a href="#" class="text-white text-center">Privacy Policy</a> </li>
                     </ul>
                 </div>
+                <!-- fourth column of the footer -->
                 <div class="col-7 col-md-3 col-lg-3 d-flex justify-content-center align-items-center">
                     <ul class="p-0 w-100">
-                        <li class="text-white fw-medium my-4 text-break text-center"><a href="" class="text-white text-center">Faculty & Staff</a></li>
-                        <li class="text-white fw-medium my-4 text-center text-break"><a href="" class="text-white text-center">Accreditation</a></li>
-                        <li class="text-white fw-medium my-4 text-center text-break"><a href="" class="text-white text-center">Learning Outcomes</a></li>
-                        <li class="text-white fw-medium my-4 text-center text-break"><a href="" class="text-white text-center">Harassment/Discrimination Policy</a> </li>
-                        <li class="text-white fw-medium my-4 text-center text-break"><a href="" class="text-white text-center">Web Accessibility Statement</a> </li>
-                        <li class="text-white fw-medium my-4 text-center text-break"><a href="" class="text-white text-center">Institutional Review Board</a> </li>
+                        <li class="text-white fw-medium my-4 text-break text-center"><a href="#" class="text-white text-center">Faculty & Staff</a></li>
+                        <li class="text-white fw-medium my-4 text-center text-break"><a href="#" class="text-white text-center">Accreditation</a></li>
+                        <li class="text-white fw-medium my-4 text-center text-break"><a href="#" class="text-white text-center">Learning Outcomes</a></li>
+                        <li class="text-white fw-medium my-4 text-center text-break"><a href="#" class="text-white text-center">Harassment/Discrimination Policy</a> </li>
+                        <li class="text-white fw-medium my-4 text-center text-break"><a href="#" class="text-white text-center">Web Accessibility Statement</a> </li>
+                        <li class="text-white fw-medium my-4 text-center text-break"><a href="#" class="text-white text-center">Institutional Review Board</a> </li>
                     </ul>
                 </div>
             </div>
@@ -1069,6 +1159,7 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <!-- font awesome resource for the social media icons -->
     <script src="https://kit.fontawesome.com/e091db22dc.js" crossorigin="anonymous"></script>
 </body>
 </html>
