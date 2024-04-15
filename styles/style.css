@@ -4,22 +4,22 @@
     box-sizing: border-box !important;
     font-family: "Poppins", sans-serif;
 }
-
+/* font family for the page (poppins) */
 .poppins-regular {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-  
+  /* styling for the logo container on the navbar on the landing page */
 .logo-ctn{
     height: 100%;
     max-width: 250px;
 }
-
+/* height of the whole navbar */
 .nav-ctn{
     height: 130px;
 }
-
+/* styling for the section of the navbar with red background on the landing page */
 .nav-links-top{
     height: 40%;
     display: flex;
@@ -30,7 +30,7 @@
     border-bottom-left-radius: 12px;
 
 }
-
+/* styling for the links container in the top row of the navbar on the landing page */
 .links-ctn-top{
     display: flex;
     flex-direction: row;
@@ -38,7 +38,7 @@
     align-items: center;
     height: 100%;
 }
-
+/* style for the alverno news dropdown button */
 .links-ctn-top button{
     outline: none;
     border: none;
@@ -46,14 +46,14 @@
     height: 100%;
     border-bottom-left-radius: 12px;
 }
-
+/* style for the text on the top row of the navbar with red background on the landing page */
 .nav-links-top li a,.links-ctn-top button{
     color: white;
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 600;
 }
-
+/* style for the form on the navbar on the landing page */
 .nav-form{
     background-color: #740426;
     outline: none;
@@ -62,6 +62,7 @@
     width: 150px;
     color: white;
 }
+/* style for the submit button on the navbar in the landing page */
 .submit-btn{
     background-image: url(../images/search.png);
     background-repeat: no-repeat;
@@ -72,30 +73,29 @@
     outline: none;
     border: none;
 }
-
+/* placeolder text shown in the input form on the navbar in the landing page */
 input::placeholder{
     color: #ececec;
     font-size: 20px;
     font-style: italic;
 }
-
+/* size for the menu button displayed to toggle the sidebar on small and medium screens */
 .menu{
     width: 100px;
 }
-
+/* button style for the menu */
 .menu button{
     outline: none;
     border: none;
     background-color: transparent;
 }
-
 li{
     list-style: none;
 }
 a{
     text-decoration: none;
 }
-
+/* styles for the bottom part of the navbar on the landing page */
 .nav-links-bottom{
     height: 60%;
     display: flex;
@@ -104,14 +104,14 @@ a{
     align-items: flex-end;
     border-bottom-left-radius: 12px;
 }
-
+/* container containing the links and dropdowns in the bottom part of the navbar */
 .links-ctn-bottom{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
-
+/* style for the buttons that toggle dropdowns in the navbar section with white background */
 .dropdown button, .dropdown-center button{
     outline: none;
     border: none;
@@ -124,7 +124,7 @@ a{
     align-items: center;
     justify-content: center;
 }
-
+/* style for the apply button on the navbar */
 .apply{
     width: 150px;
     height: 80%;
@@ -134,7 +134,7 @@ a{
     outline: none;
 }
 
-/* navbar dropdowns */
+/* dropdown for the alverno news button */
 .top-drop-down{
     display: flex;
     flex-direction: column;
@@ -156,19 +156,20 @@ a{
     border-bottom: #740426 5px solid;
 }
 
-.drop-btn::after{
+/* .drop-btn::after{
     height: 0px;
 }
 
-.dropdown:hover > .drop-btn::after{
+.drop-btn::after{
     opacity: 1;
     background-color: #740426;
     display: block;
     transition: all ease 0.2s;
     height: 5px;
     content: " ";
-}
+} */
 
+/* large sized dropdowns in the navbar on the home page and apply page */
 .menu-large{
     height: auto;
     width: 100vw;
@@ -178,7 +179,7 @@ a{
     box-shadow: none;
     border-color: white;
 }
-
+/* small sized dropdowns in the navbar on the home page and apply page */
 .menu-small{
     height: auto;
     width: 300px;
@@ -195,11 +196,11 @@ a{
     align-items: flex-start;
     position: relative;
 }
+/* adds a right border to every ul except the last ul containing links in the dropdown on the navbar */
 .dropdown-details ul:not(:last-child){
     border-right: solid 2px #c2c2c2;
-
 }
-/* main area */
+/* hero section of the landing page */
 .main-area{
     display: flex;
     flex-direction: column;
@@ -207,33 +208,36 @@ a{
     align-items: center;
     height: 600px;
     width: 100%;
-    background-image: url(../images/landing-image.png);
+    margin-top: 130px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 80px;
+    background-position: top;
 }
-.main-area-info{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+/* background image for the first slide on the carousel in the landing page */
+.slide-1{
+    background-image: url(../images/landing-image.png);
 }
-
+/* background image for the second slide on the carousel in the landing page */
+.slide-2{
+    background-image: url(../images/find-your-image.jpg);
+}
+/* background image for the third slide on the carousel in the landing page */
+.slide-3{
+    background-image: url(../images/testimonial-image.png);
+}
+/* style for the bigger text on the hero section of the landing page */
+.main-area span{
+    font-size: 125px;
+}
+/* style for the smaller text on the hero section of the landing page */
 .main-area h1{
-    font-size: 120px;
+    font-size: 40px;
     color: white;
     text-transform: uppercase;
-    font-weight: 700;
-    text-shadow: #2b2b2b;
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.8));
+    font-weight: 900;
 }
-
-.main-area p{
-    font-size: 50px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
+/* style for the buttons on the hero section of the landing page */
 .main-area div button{
     background-color: #98002E;
     outline: none;
@@ -244,7 +248,7 @@ a{
     text-transform: uppercase;
 }
 
-/* alverno empowers */
+/* alverno empowers section with the triangle patterned background */
 .alverno-empowers{
     height: 500px;
     background-color: #740426;
@@ -253,10 +257,10 @@ a{
     justify-content: center;
     align-items: center;
     background-image: url(../images/content_area_pattern_triangle.svg);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
-/* explore our programs */
+/* explore our programs section container */
 .explore-programs{
     display: flex;
     flex-direction: column;
@@ -264,17 +268,16 @@ a{
     align-items: center;
     height: auto;
 }
-
+/* this style is for the  */
 .card-ctn{
     width: 90%;
     position: relative;
 }
-
-
+/* explore programs card */
 .card{
     bottom: 0px;
 }
-
+/* style to make the card in the explore programs float up when hovered on */
 .card:hover{
     cursor: pointer;
     transition: all ease .3s;
@@ -300,16 +303,16 @@ a{
 
 
 }
-
+/* container for the white spacing div with yellow dots */
 .space{
-    height: 150px;
+    height: 120px;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-
+/* container for the yellow dots in the whitespace div */
 .dots-ctn{
     display: flex;
     flex-direction: column;
@@ -318,22 +321,24 @@ a{
     height: 100%;
     width: 20px;
 }
+/* yellow dots */
 .dot{
     height:5px;
     width:5px;
     border-radius: 50%;
     background-color: #EDB111;
 }
-
-.alverno-difference h1::before{
+/* style for the yellow underline aligned to the start of the heading in the alverno difference section */
+.alverno-difference h1::after{
     height: 3px;
     width: 140px;
     background-color: #EDB111;
     content: " ";
     position: absolute;
     bottom: -25px;
+    left: 0;
 }
-
+/* style for the testimonial container */
 .testimonial{
     display: flex;
     flex-direction: row;
@@ -342,23 +347,26 @@ a{
     height: auto;
     background-color: #98002E;
 }
+/* style for the testimony card */
 .testimony{
     background-color: white;
     height: auto;
     top: 50px;
     right: 50px;
 }
+/* style for the yellow quote on the testimonial section */
 .quote-close{
     height: 100px;
     width: 100px;
     bottom: -70px;
-    right: -20px;
+    right: 0;
 }
+/* styling for the pink quote in the testimonial section */
 .quote-open{
     height: 100px;
     width: 100px;
     top: -70px;
-    left: -20px;
+    left: 0;
 }
 
 .where-all-belong{
@@ -368,27 +376,17 @@ a{
     justify-content: center;
     align-items: center;
 }
-
-
+/* changes the background and text color of buttons in the where we belong section on hovering upon them */
 .where-all-belong button:hover{
     background-color: #740426;
     color: white !important;
     border: none;
     word-wrap: break-word;
 }
-
-.where-all-belong .btn-ctn{
-
-}
-
-.event-images{
-    height: 220px;
-}
-
-.alverno-power .card-image{
+/* yellow border bottom on the images in the alverno news section */
+.alverno-news .card-image{
     border-bottom: solid 5px #EDB111;
 }
-
 .footer-ctn{
     height: auto;
     width: 100%;
@@ -396,6 +394,7 @@ a{
     box-shadow: none;
     position: relative;
 }
+/* style for the little transparent red box on the footer */
 .footer-ctn::before{
     height: 12px;
     background-color: #98002E;
@@ -407,6 +406,7 @@ a{
     opacity: .5;
     display: block;
 }
+/* logo for the footer of the home and apply page */
 .footer-logo-ctn{
     position: relative;
     bottom: 35px;
@@ -419,23 +419,18 @@ a{
     height: 80%;
     margin: 0 auto;
 }
-
+/* container for the social media icons on the footer of the home and apply page */
 .social-media-icon-ctn{
     display: flex;
     height: 50px;
 }
-
-.social-media-icon-ctn i{
-    cursor: pointer;
-}
-
+/* add cursor and change the background color to yellow when the social media icons are hovered on */
 .social-media-icon-ctn i:hover{
     color: #EDB111 !important;
     transition: all linear .3s;
+    cursor: pointer;
 }
-
-/* apply page */
-
+/* styles for the background image and shadow of the hero image of the apply page */
 .apply-banner{
     display: flex;
     flex-direction: column;
@@ -443,20 +438,31 @@ a{
     align-items: start;
     height: 700px;
     width: 100%;
-    background-image: url(../images/apply.jpg);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), to(rgba(0, 0, 0, 0.75))), url('/images/apply.jpg');
-    background-image: linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.75)), url('/images/apply.jpg');
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), to(rgba(0, 0, 0, 0.75))), url('../images/apply.jpg');
+    background-image: linear-gradient(180deg, transparent 50%, rgba(0, 0, 0, 0.75)), url('../images/apply.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     margin-top: 60px;
 }
-/* responsive apply banner height */
 @media only screen and (max-width: 450px) {
+    /* responsive height for the hero section on small screens */
     .main-area{
-        height: 400px;
+        height: 250px !important;
         width: 100%;
-        margin-top: 50px;
+        margin-top: 50px !important;
+    }
+    /* style for the bigger text on the hero section of the landing page */
+    .main-area span{
+        font-size: 48px;
+    }
+    /* style for the smaller text on the hero section of the landing page */
+    .main-area h1{
+        font-size: 30px;
+        color: white;
+        text-transform: uppercase;
+        filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.8));
+        font-weight: 900;
     }
     .testimony{
         background-color: white;
@@ -464,6 +470,25 @@ a{
         top: 0;
         right: 0;
     }
+    /* size of testimonial image on small screens */
+    .testimonial-image{
+        height: 250px !important;
+    }
+    /* style for the yellow quote on the testimonial section on small screens */
+    .quote-close{
+        height: 75px;
+        width: 50px;
+        bottom: -50px;
+        right: 0;
+    }
+    /* styling for the pink quote in the testimonial section on small screens*/
+    .quote-open{
+        height: 75px;
+        width: 50px;
+        top: -50px;
+        left: 0;
+    }
+    /* style for the space with yellow dots on small screens */
     .space{
         height: 100px;
         position: relative;
@@ -473,9 +498,14 @@ a{
         align-items: center;
         margin: 20px 0px !important;
     }
+    /* style for the hero image container on the apply page for small screen */
+    .apply-banner{
+        height: 300px  !important;
+        width: 100%;
+        margin-top: 60px;
+    }
 
 }
-
 @media only screen and (max-width: 1024px) {
     .testimony{
         background-color: white;
@@ -484,14 +514,19 @@ a{
         right: 0;
         border-radius: 0px 0px 12px 12px!important;
     }
+    /* style for the hero image container on the apply page for medium screns */
     .apply-banner{
         height: 400px;
         width: 100%;
-        margin-top: 50px;
+        margin-top: 60px;
+    }
+    .main-area{
+        margin-top: 80px;
+        height: 400px;
     }
 
 }
-
+/* style for the yellow centered underline on headings of sections, when using this class the tag must have a position-relative*/
 .bottom-line-center::after{
     height: 3px;
     width: 140px;
@@ -502,11 +537,11 @@ a{
     bottom: -20px;
     transform: translateX(50%);
 }
-
+/* action to display the yellow semi circle under the links on the navbar of the login and sign up page */
 .scl:hover > .semi-circle::after{
     display: block !important;
 }
-
+/* style for the yellow semi circle underneath the links of the navbar on the login and signup page, the display is originally none */
 .semi-circle::after{
     display: none;
     height: 25px;
@@ -520,4 +555,6 @@ a{
     transform: translateX(50%);
 }
 
- 
+.testimonial-image{
+    height: 400px;
+}
